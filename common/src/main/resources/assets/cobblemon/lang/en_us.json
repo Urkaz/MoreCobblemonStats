@@ -5,6 +5,7 @@
   "stat.cobblemon.pokemon_megaevolved": "Pokémon Mega Evolved",
   "stat.cobblemon.z_moves_used": "Pokémon Z-Moves Used",
   "stat.cobblemon.pokemon_forme_changes": "Pokémon Forme Changes",
+  "stat.cobblemon.pokemon_defeated": "Pokémon Defeated",
 
   "stat.cobblemon.cobbledollars_lost": "Cobbledollars Lost",
   "stat.cobblemon.cobbledollars_earned": "Cobbledollars Earned",
@@ -21,5 +22,7 @@
   "stat.cobblemon.quick_battles_won": "Pokémon Quick Battles Won",
   "stat.cobblemon.quick_battles_lost": "Pokémon Quick Battles Lost",
 
-  "stat.cobblemon.rustling_spots_examined": "Rustling Spots Examined"
+  "stat.cobblemon.rustling_spots_examined": "Rustling Spots Examined",
+
+  "stat.cobblemon.pokemon_marks_obtained": "Pokémon Marks Obtained"
 }

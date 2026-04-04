@@ -23,6 +23,7 @@ public class MCS_Stats {
     public static final CobblemonStats.CobblemonStat POKEMON_MEGAEVOLVED = new CobblemonStats.CobblemonStat("pokemon_megaevolved", StatFormatter.DEFAULT);
     public static final CobblemonStats.CobblemonStat POKEMON_ZMOVES_USED = new CobblemonStats.CobblemonStat("z_moves_used", StatFormatter.DEFAULT);
     public static final CobblemonStats.CobblemonStat POKEMON_FORME_CHANGES = new CobblemonStats.CobblemonStat("pokemon_forme_changes", StatFormatter.DEFAULT);
+    public static final CobblemonStats.CobblemonStat POKEMON_DEFEATED = new CobblemonStats.CobblemonStat("pokemon_defeated", StatFormatter.DEFAULT);
     // Cobbledollars
     public static final CobblemonStats.CobblemonStat COBBLEDOLLARS_LOST = new CobblemonStats.CobblemonStat("cobbledollars_lost", StatFormatter.DEFAULT);
     public static final CobblemonStats.CobblemonStat COBBLEDOLLARS_EARNED = new CobblemonStats.CobblemonStat("cobbledollars_earned", StatFormatter.DEFAULT);
@@ -41,6 +42,8 @@ public class MCS_Stats {
     public static final CobblemonStats.CobblemonStat POKEMON_ULTRA_BURST_USED = new CobblemonStats.CobblemonStat("ultra_burst_used", StatFormatter.DEFAULT);
     // Rustling Spots
     public static final CobblemonStats.CobblemonStat RUSTLING_SPOTS_EXAMINED = new CobblemonStats.CobblemonStat("rustling_spots_examined", StatFormatter.DEFAULT);
+    // Cobblemon Marks Quests
+    public static final CobblemonStats.CobblemonStat POKEMON_MARKS_OBTAINED = new CobblemonStats.CobblemonStat("pokemon_marks_obtained", StatFormatter.DEFAULT);
 
     @NotNull
     public final Map<String, CobblemonStats.CobblemonStat> getStats() {
@@ -56,6 +59,7 @@ public class MCS_Stats {
         stats.put("pokemon_megaevolved", POKEMON_MEGAEVOLVED);
         stats.put("z_moves_used", POKEMON_ZMOVES_USED);
         stats.put("pokemon_forme_changes", POKEMON_FORME_CHANGES);
+        stats.put("pokemon_defeated", POKEMON_DEFEATED);
 
         if (MCS_Platform.isModLoaded("cobbledollars")) {
             stats.put("cobbledollars_lost", COBBLEDOLLARS_LOST);
@@ -83,6 +87,10 @@ public class MCS_Stats {
 
         if (MCS_Platform.isModLoaded("rustlingspots")) {
             stats.put("rustling_spots_examined", RUSTLING_SPOTS_EXAMINED);
+        }
+
+        if (MCS_Platform.isModLoaded("cobblemonmarks")) {
+            stats.put("pokemon_marks_obtained", POKEMON_MARKS_OBTAINED);
         }
     }
 

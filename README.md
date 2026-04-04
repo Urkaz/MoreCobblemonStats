@@ -8,6 +8,7 @@ Adds more Stats to Cobblemon and some of its addons.
 
 * Poké Balls Thrown
 * Poké Balls Thrown Hit
+* Pokémon Defeated
 * Pokémon Terastalized
 * Pokémon Mega Evolved
 * Pokémon Forme Changes
@@ -23,7 +24,7 @@ Adds more Stats to Cobblemon and some of its addons.
 * Hoopa Rings Traversed
 * Safari Expeditions
 * Underground Treasures Found
-* Visits to dimensions through Hoopa Rings:
+* (Visits to dimensions through Hoopa Rings):
   * Underground Adventures
   * Distortion World Visits
 * Secret Base Flags Stolen
@@ -40,6 +41,10 @@ Adds more Stats to Cobblemon and some of its addons.
 ### [Cobblemon Rustling Spots (2.0.1)](https://modrinth.com/mod/cobblemon-rustling-spots)
 
 * Rustling Spots Examined
+
+### [Cobblemon Marks Quests (1.0.2)](https://www.curseforge.com/minecraft/mc-mods/cobblemon-marks-quests/)
+
+* Pokémon Marks Obtained
 
 ## TODO
 
