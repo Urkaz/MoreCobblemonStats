@@ -1,6 +1,10 @@
 {
   "stat.cobblemon.poke_ball_thrown": "Poké Ball Thrown",
   "stat.cobblemon.poke_ball_thrown_hit": "Poké Ball Thrown Hit",
+  "stat.cobblemon.pokemon_terastalized": "Pokémon Terastalized",
+  "stat.cobblemon.pokemon_megaevolved": "Pokémon Mega Evolved",
+  "stat.cobblemon.z_moves_used": "Pokémon Z-Moves Used",
+  "stat.cobblemon.pokemon_forme_changes": "Pokémon Forme Changes",
 
   "stat.cobblemon.cobbledollars_lost": "Cobbledollars Lost",
   "stat.cobblemon.cobbledollars_earned": "Cobbledollars Earned",

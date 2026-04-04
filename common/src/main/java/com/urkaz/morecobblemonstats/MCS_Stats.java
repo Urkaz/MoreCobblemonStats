@@ -19,6 +19,10 @@ public class MCS_Stats {
     // Cobblemon
     public static final CobblemonStats.CobblemonStat POKEBALL_THROWN = new CobblemonStats.CobblemonStat("poke_ball_thrown", StatFormatter.DEFAULT);
     public static final CobblemonStats.CobblemonStat POKEBALL_THROWN_HIT = new CobblemonStats.CobblemonStat("poke_ball_thrown_hit", StatFormatter.DEFAULT);
+    public static final CobblemonStats.CobblemonStat POKEMON_TERASTALIZED = new CobblemonStats.CobblemonStat("pokemon_terastalized", StatFormatter.DEFAULT);
+    public static final CobblemonStats.CobblemonStat POKEMON_MEGAEVOLVED = new CobblemonStats.CobblemonStat("pokemon_megaevolved", StatFormatter.DEFAULT);
+    public static final CobblemonStats.CobblemonStat POKEMON_ZMOVES_USED = new CobblemonStats.CobblemonStat("z_moves_used", StatFormatter.DEFAULT);
+    public static final CobblemonStats.CobblemonStat POKEMON_FORME_CHANGES = new CobblemonStats.CobblemonStat("pokemon_forme_changes", StatFormatter.DEFAULT);
     // Cobbledollars
     public static final CobblemonStats.CobblemonStat COBBLEDOLLARS_LOST = new CobblemonStats.CobblemonStat("cobbledollars_lost", StatFormatter.DEFAULT);
     public static final CobblemonStats.CobblemonStat COBBLEDOLLARS_EARNED = new CobblemonStats.CobblemonStat("cobbledollars_earned", StatFormatter.DEFAULT);
@@ -40,12 +44,19 @@ public class MCS_Stats {
 
     public static void registerStats() {
         MoreCobblemonStats.LOGGER.info("Registering stats...");
+
         stats.put("poke_ball_thrown", POKEBALL_THROWN);
         stats.put("poke_ball_thrown_hit", POKEBALL_THROWN_HIT);
+        stats.put("pokemon_terastalized", POKEMON_TERASTALIZED);
+        stats.put("pokemon_megaevolved", POKEMON_MEGAEVOLVED);
+        stats.put("z_moves_used", POKEMON_ZMOVES_USED);
+        stats.put("pokemon_forme_changes", POKEMON_FORME_CHANGES);
+
         if (MCS_Platform.isModLoaded("cobbledollars")) {
             stats.put("cobbledollars_lost", COBBLEDOLLARS_LOST);
             stats.put("cobbledollars_earned", COBBLEDOLLARS_EARNED);
         }
+
         if (MCS_Platform.isModLoaded("cobblesafari")) {
             stats.put("safari_entered", SAFARI_ENTER);
             stats.put("hoopa_rings_used", HOOPA_RINGS_USED);
@@ -53,6 +64,7 @@ public class MCS_Stats {
             stats.put("secret_base_flags_stolen", SECRET_BASE_FLAGS_STOLEN);
             stats.put("reward_balloons_looted", SAFARI_BALLOON_DROP);
         }
+
         if (MCS_Platform.isModLoaded("cobblemon_quick_battle")) {
             stats.put("quick_battles_total", QUICK_BATTLE_TOTAL);
             stats.put("quick_battles_won", QUICK_BATTLE_WON);

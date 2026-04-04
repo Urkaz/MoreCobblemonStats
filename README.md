@@ -8,6 +8,10 @@ Adds more Stats to Cobblemon and some of its addons.
 
 * Poké Balls Thrown
 * Poké Balls Thrown Hit
+* Pokémon Terastalized
+* Pokémon Mega Evolved
+* Pokémon Forme Changes
+* Pokémon Z-Moves Used
 
 ### [Cobbledollars (2.0.0+Beta-5.1)](https://modrinth.com/mod/cobbledollars)
 
@@ -35,6 +39,9 @@ Adds more Stats to Cobblemon and some of its addons.
 
 ## TODO
 
+- Mega Showdown: Dynamax used
+- Mega Showdown: Ultra Burst used
+- Cobblemon: Pokémon Fainted
 - BattleTower: Beaten floors
 - BattleTower: Beaten times
 - CobbleCuisine?
