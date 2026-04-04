@@ -9,6 +9,8 @@
     "cobbledollars.PlayerExtensionKtMixin",
     "cobblemon.EmptyPokeBallEntityMixin",
     "cobblemon.PokeBallItemMixin",
+    "cobblemon_quick_battle.QuickBattleInitiatePacketMixin",
+    "cobblesafari.BalloonEntityMixin",
     "cobblesafari.CobbleSafariMixin",
     "cobblesafari.DungeonTpAcceptHandlerMixin",
     "cobblesafari.IncubatorBlockMixin",

@@ -40,9 +40,11 @@ dependencies {
         modImplementation "com.terraformersmc:modmenu:${project.modmenu_version}"
         modImplementation "maven.modrinth:cobbledollars:${project.cobbledollars_modrinth_fabric}"
         modImplementation "maven.modrinth:cobblesafari:${project.cobblesafari_modrinth_fabric}"
+        modImplementation "maven.modrinth:cobblemon-quick-battle:${project.quickbattle_modrinth_fabric}"
     } else {
         modCompileOnly "maven.modrinth:cobbledollars:${project.cobbledollars_modrinth_fabric}"
         modCompileOnly "maven.modrinth:cobblesafari:${project.cobblesafari_modrinth_fabric}"
+        modCompileOnly "maven.modrinth:cobblemon-quick-battle:${project.quickbattle_modrinth_fabric}"
     }
 }
 

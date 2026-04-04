@@ -27,6 +27,11 @@ public class MCS_Stats {
     public static final CobblemonStats.CobblemonStat HOOPA_RINGS_USED = new CobblemonStats.CobblemonStat("hoopa_rings_used", StatFormatter.DEFAULT);
     public static final CobblemonStats.CobblemonStat UNDERGROUND_TREASURES_FOUND = new CobblemonStats.CobblemonStat("underground_treasures_found", StatFormatter.DEFAULT);
     public static final CobblemonStats.CobblemonStat SECRET_BASE_FLAGS_STOLEN = new CobblemonStats.CobblemonStat("secret_base_flags_stolen", StatFormatter.DEFAULT);
+    public static final CobblemonStats.CobblemonStat SAFARI_BALLOON_DROP = new CobblemonStats.CobblemonStat("reward_balloons_looted", StatFormatter.DEFAULT);
+    // Cobblemon Quick Battle
+    public static final CobblemonStats.CobblemonStat QUICK_BATTLE_TOTAL = new CobblemonStats.CobblemonStat("quick_battles_total", StatFormatter.DEFAULT);
+    public static final CobblemonStats.CobblemonStat QUICK_BATTLE_WON = new CobblemonStats.CobblemonStat("quick_battles_won", StatFormatter.DEFAULT);
+    public static final CobblemonStats.CobblemonStat QUICK_BATTLE_LOST = new CobblemonStats.CobblemonStat("quick_battles_lost", StatFormatter.DEFAULT);
 
     @NotNull
     public final Map<String, CobblemonStats.CobblemonStat> getStats() {
@@ -46,6 +51,12 @@ public class MCS_Stats {
             stats.put("hoopa_rings_used", HOOPA_RINGS_USED);
             stats.put("underground_treasures_found", UNDERGROUND_TREASURES_FOUND);
             stats.put("secret_base_flags_stolen", SECRET_BASE_FLAGS_STOLEN);
+            stats.put("reward_balloons_looted", SAFARI_BALLOON_DROP);
+        }
+        if (MCS_Platform.isModLoaded("cobblemon_quick_battle")) {
+            stats.put("quick_battles_total", QUICK_BATTLE_TOTAL);
+            stats.put("quick_battles_won", QUICK_BATTLE_WON);
+            stats.put("quick_battles_lost", QUICK_BATTLE_LOST);
         }
     }
 

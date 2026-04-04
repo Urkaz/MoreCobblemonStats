@@ -58,6 +58,7 @@ dependencies {
     modImplementation "com.cobblemon:neoforge:${project.cobblemon_version}"
     modCompileOnly "maven.modrinth:cobbledollars:${project.cobbledollars_modrinth_neoforge}"
     modCompileOnly "maven.modrinth:cobblesafari:${project.cobblesafari_modrinth_neoforge}"
+    modCompileOnly "maven.modrinth:cobblemon-quick-battle:${project.quickbattle_modrinth_neoforge}"
 }
 
 processResources {
