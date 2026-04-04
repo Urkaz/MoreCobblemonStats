@@ -25,7 +25,7 @@ configurations {
 dependencies {
     modImplementation "net.fabricmc:fabric-loader:$project.fabric_loader_version"
     modImplementation "net.fabricmc.fabric-api:fabric-api:$project.fabric_api_version"
-    //modImplementation "dev.architectury:architectury-fabric:$project.architectury_api_version"
+    modImplementation "dev.architectury:architectury-fabric:$project.architectury_api_version"
 
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }
     shadowBundle project(path: ':common', configuration: 'transformProductionFabric')
@@ -41,10 +41,12 @@ dependencies {
         modImplementation "maven.modrinth:cobbledollars:${project.cobbledollars_modrinth_fabric}"
         modImplementation "maven.modrinth:cobblesafari:${project.cobblesafari_modrinth_fabric}"
         modImplementation "maven.modrinth:cobblemon-quick-battle:${project.quickbattle_modrinth_fabric}"
+        modImplementation "maven.modrinth:cobblemon-mega-showdown:${project.megashowdown_modrinth_fabric}"
     } else {
         modCompileOnly "maven.modrinth:cobbledollars:${project.cobbledollars_modrinth_fabric}"
         modCompileOnly "maven.modrinth:cobblesafari:${project.cobblesafari_modrinth_fabric}"
         modCompileOnly "maven.modrinth:cobblemon-quick-battle:${project.quickbattle_modrinth_fabric}"
+        modCompileOnly "maven.modrinth:cobblemon-mega-showdown:${project.megashowdown_modrinth_fabric}"
     }
 }
 

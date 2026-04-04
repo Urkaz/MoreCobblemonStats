@@ -36,6 +36,9 @@ public class MCS_Stats {
     public static final CobblemonStats.CobblemonStat QUICK_BATTLE_TOTAL = new CobblemonStats.CobblemonStat("quick_battles_total", StatFormatter.DEFAULT);
     public static final CobblemonStats.CobblemonStat QUICK_BATTLE_WON = new CobblemonStats.CobblemonStat("quick_battles_won", StatFormatter.DEFAULT);
     public static final CobblemonStats.CobblemonStat QUICK_BATTLE_LOST = new CobblemonStats.CobblemonStat("quick_battles_lost", StatFormatter.DEFAULT);
+    // Mega Showdown
+    public static final CobblemonStats.CobblemonStat POKEMON_DYNAMAXED = new CobblemonStats.CobblemonStat("pokemon_dynamaxed", StatFormatter.DEFAULT);
+    public static final CobblemonStats.CobblemonStat POKEMON_ULTRA_BURST_USED = new CobblemonStats.CobblemonStat("ultra_burst_used", StatFormatter.DEFAULT);
 
     @NotNull
     public final Map<String, CobblemonStats.CobblemonStat> getStats() {
@@ -69,6 +72,11 @@ public class MCS_Stats {
             stats.put("quick_battles_total", QUICK_BATTLE_TOTAL);
             stats.put("quick_battles_won", QUICK_BATTLE_WON);
             stats.put("quick_battles_lost", QUICK_BATTLE_LOST);
+        }
+
+        if (MCS_Platform.isModLoaded("cobblemon_mega_showdown")) {
+            stats.put("pokemon_dynamaxed", POKEMON_DYNAMAXED);
+            stats.put("ultra_burst_used", POKEMON_ULTRA_BURST_USED);
         }
     }
 

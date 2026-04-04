@@ -43,7 +43,7 @@ repositories {
 
 dependencies {
     neoForge "net.neoforged:neoforge:$project.neoforge_version"
-    //modImplementation "dev.architectury:architectury-neoforge:$project.architectury_api_version"
+    modImplementation "dev.architectury:architectury-neoforge:$project.architectury_api_version"
 
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }
     shadowBundle project(path: ':common', configuration: 'transformProductionNeoForge')
@@ -59,6 +59,7 @@ dependencies {
     modCompileOnly "maven.modrinth:cobbledollars:${project.cobbledollars_modrinth_neoforge}"
     modCompileOnly "maven.modrinth:cobblesafari:${project.cobblesafari_modrinth_neoforge}"
     modCompileOnly "maven.modrinth:cobblemon-quick-battle:${project.quickbattle_modrinth_neoforge}"
+    modCompileOnly "maven.modrinth:cobblemon-mega-showdown:${project.megashowdown_modrinth_neoforge}"
 }
 
 processResources {

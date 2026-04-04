@@ -39,15 +39,26 @@ Adds more Stats to Cobblemon and some of its addons.
 
 ## TODO
 
-- Mega Showdown: Dynamax used
-- Mega Showdown: Ultra Burst used
-- Cobblemon: Pokémon Fainted
-- BattleTower: Beaten floors
-- BattleTower: Beaten times
-- CobbleCuisine?
+### High Priority
+
 - RaidDens: Completed
+- Cobblemon: Pokémon Fainted?
+- RustlingSpots: Examined/Looted
+- CobbleCuisine?
+
+### Normal Priority
+
+- ResearchTasks: Tasks Completed
+- ResearchTasks: Entries Completed
+- Snap: Photos taken
 - ShadowedHearts: Pokémon Purified
 - ShadowedHearts: Shadow Pokémon caught
-- ShadowedHearts: Shadow Pokémon 
-- Snap: Photos taken
+- ShadowedHearts: Shadow Pokémon
+
+### Lower Priority
+
+- Expeditions: Completed
+- Expeditions: Failed
+- BattleTower: Beaten floors
+- BattleTower: Beaten times
 - CobbleBase?

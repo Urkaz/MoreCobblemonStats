@@ -26,6 +26,13 @@ ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.more_cobblemon_stats]]
+modId = "architectury"
+type = "required"
+versionRange = "[13.0.8, )"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.more_cobblemon_stats]]
 modId = "cobblemon"
 type = "required"
 versionRange = "[1.7.0, )"
@@ -47,9 +54,16 @@ ordering = "AFTER"
 side = "BOTH"
 
 [[dependencies.more_cobblemon_stats]]
-modId = "cobbreeding"
+modId = "cobblemon_quick_battle"
 type = "optional"
-versionRange = "[2.2.1, )"
+versionRange = "[1.3.8, )"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.more_cobblemon_stats]]
+modId = "cobblemon_mega_showdown"
+type = "optional"
+versionRange = "[1.7.4, )"
 ordering = "AFTER"
 side = "BOTH"
 

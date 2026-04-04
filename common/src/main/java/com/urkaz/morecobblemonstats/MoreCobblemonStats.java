@@ -1,6 +1,7 @@
 package com.urkaz.morecobblemonstats;
 
-import com.urkaz.morecobblemonstats.cobblemon.MCS_CobblemonEventListener;
+import com.urkaz.morecobblemonstats.events.MCS_CobblemonEventListener;
+import com.urkaz.morecobblemonstats.events.MCS_MegaShowdownEventListener;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,5 +12,6 @@ public class MoreCobblemonStats {
 
     public static void init() {
         MCS_CobblemonEventListener.registerEvents();
+        MCS_MegaShowdownEventListener.registerEvents();
     }
 }
