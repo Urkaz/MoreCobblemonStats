@@ -19,5 +19,7 @@
 
   "stat.cobblemon.quick_battles_total": "Pokémon Quick Battles Total",
   "stat.cobblemon.quick_battles_won": "Pokémon Quick Battles Won",
-  "stat.cobblemon.quick_battles_lost": "Pokémon Quick Battles Lost"
+  "stat.cobblemon.quick_battles_lost": "Pokémon Quick Battles Lost",
+
+  "stat.cobblemon.rustling_spots_examined": "Rustling Spots Examined"
 }

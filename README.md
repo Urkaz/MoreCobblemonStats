@@ -37,13 +37,16 @@ Adds more Stats to Cobblemon and some of its addons.
 * Pokémon Quick Battles Won
 * Pokémon Quick Battles Started
 
+### [Cobblemon Rustling Spots (2.0.1)](https://modrinth.com/mod/cobblemon-rustling-spots)
+
+* Rustling Spots Examined
+
 ## TODO
 
 ### High Priority
 
 - RaidDens: Completed
 - Cobblemon: Pokémon Fainted?
-- RustlingSpots: Examined/Looted
 - CobbleCuisine?
 
 ### Normal Priority

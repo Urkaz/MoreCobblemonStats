@@ -60,6 +60,7 @@ dependencies {
     modCompileOnly "maven.modrinth:cobblesafari:${project.cobblesafari_modrinth_neoforge}"
     modCompileOnly "maven.modrinth:cobblemon-quick-battle:${project.quickbattle_modrinth_neoforge}"
     modCompileOnly "maven.modrinth:cobblemon-mega-showdown:${project.megashowdown_modrinth_neoforge}"
+    modCompileOnly "maven.modrinth:cobblemon-rustling-spots:${project.rustlingspots_modrinth_neoforge}"
 }
 
 processResources {

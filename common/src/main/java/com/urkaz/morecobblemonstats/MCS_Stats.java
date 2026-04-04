@@ -39,6 +39,8 @@ public class MCS_Stats {
     // Mega Showdown
     public static final CobblemonStats.CobblemonStat POKEMON_DYNAMAXED = new CobblemonStats.CobblemonStat("pokemon_dynamaxed", StatFormatter.DEFAULT);
     public static final CobblemonStats.CobblemonStat POKEMON_ULTRA_BURST_USED = new CobblemonStats.CobblemonStat("ultra_burst_used", StatFormatter.DEFAULT);
+    // Rustling Spots
+    public static final CobblemonStats.CobblemonStat RUSTLING_SPOTS_EXAMINED = new CobblemonStats.CobblemonStat("rustling_spots_examined", StatFormatter.DEFAULT);
 
     @NotNull
     public final Map<String, CobblemonStats.CobblemonStat> getStats() {
@@ -77,6 +79,10 @@ public class MCS_Stats {
         if (MCS_Platform.isModLoaded("cobblemon_mega_showdown")) {
             stats.put("pokemon_dynamaxed", POKEMON_DYNAMAXED);
             stats.put("ultra_burst_used", POKEMON_ULTRA_BURST_USED);
+        }
+
+        if (MCS_Platform.isModLoaded("rustlingspots")) {
+            stats.put("rustling_spots_examined", RUSTLING_SPOTS_EXAMINED);
         }
     }
 

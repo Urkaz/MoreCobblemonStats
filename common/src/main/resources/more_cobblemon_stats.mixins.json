@@ -17,7 +17,8 @@
     "cobblesafari.SafariEggNestBlockMixin",
     "cobblesafari.TeleporterTickHandlerMixin",
     "cobblesafari.UndergroundMinigameMixin",
-    "cobblesafari.UndergroundPCBlockMixin"
+    "cobblesafari.UndergroundPCBlockMixin",
+    "rustlingspots.SpotRewardResolverMixin"
   ],
   "injectors": {
     "defaultRequire": 1
