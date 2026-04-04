@@ -10,10 +10,10 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Restriction(require = {@Condition("cobblesafari")})
-@Mixin(value = CobbleSafari.class, remap = false)
+@Mixin(value = CobbleSafari.class)
 public class CobbleSafariMixin {
 
-    @Inject(method = "init", at = @At("TAIL"))
+    @Inject(method = "init", at = @At("TAIL"), remap = false)
     private static void mcs$afterInit(CallbackInfo ci) {
         MCS_Stats.registerCobblesafariDynamicStats();
     }

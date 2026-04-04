@@ -14,7 +14,7 @@ import quick.battle.battle.QuickBattleResult;
 import quick.battle.network.QuickBattleInitiatePacket;
 
 @Restriction(require = {@Condition("cobblemon_quick_battle")})
-@Mixin(value = QuickBattleInitiatePacket.class, remap = false)
+@Mixin(QuickBattleInitiatePacket.class)
 public class QuickBattleInitiatePacketMixin {
 
     @Inject(
@@ -22,7 +22,8 @@ public class QuickBattleInitiatePacketMixin {
             at = @At(value = "INVOKE",
                     target = "Lquick/battle/integration/CobblemonIntegration;getDisplayName(Ljava/lang/Object;)Ljava/lang/String;",
                     ordinal = 0
-            )
+            ),
+            remap = false
     )
     private static void mcs$quickBattleResult(Object finalSelectedMove, ServerPlayer player, Object finalSelectedPokemon, Object finalTargetPokemon, Entity finalTarget, CallbackInfo ci, @Local(name = "result") QuickBattleResult result) {
         player.awardStat(MCS_Stats.getStat(MCS_Stats.QUICK_BATTLE_TOTAL));

@@ -15,7 +15,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import java.util.List;
 
 @Restriction(require = {@Condition("cobblesafari")})
-@Mixin(value = UndergroundMinigame.class, remap = false)
+@Mixin(UndergroundMinigame.class)
 public class UndergroundMinigameMixin {
 
     @Inject(

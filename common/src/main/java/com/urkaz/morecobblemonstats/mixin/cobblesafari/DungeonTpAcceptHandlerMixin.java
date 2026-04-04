@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Restriction(require = {@Condition("cobblesafari")})
-@Mixin(value = DungeonTpAcceptHandler.class, remap = false)
+@Mixin(DungeonTpAcceptHandler.class)
 public class DungeonTpAcceptHandlerMixin {
 
     @Inject(

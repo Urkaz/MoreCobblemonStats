@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import java.math.BigInteger;
 
 @Restriction(require = {@Condition("cobbledollars")})
-@Mixin(value = PlayerExtensionKt.class, remap = false)
+@Mixin(PlayerExtensionKt.class)
 public class PlayerExtensionKtMixin {
 
     @Inject(

@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Restriction(require = {@Condition("cobblesafari")})
-@Mixin(value = BalloonEntity.class, remap = false)
+@Mixin(BalloonEntity.class)
 public class BalloonEntityMixin {
 
     @Inject(method = "dropBalloonLoot", at = @At("HEAD"))

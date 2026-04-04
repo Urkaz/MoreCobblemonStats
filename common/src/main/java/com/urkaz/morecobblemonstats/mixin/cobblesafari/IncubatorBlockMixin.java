@@ -25,7 +25,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Restriction(require = {@Condition("cobblesafari")})
-@Mixin(value = IncubatorBlock.class, remap = false)
+@Mixin(IncubatorBlock.class)
 public class IncubatorBlockMixin {
 
     @Unique
@@ -46,7 +46,8 @@ public class IncubatorBlockMixin {
             method = "createPokemonFromCobbreedingEgg",
             at = @At(value = "INVOKE",
                     target = "Lcom/cobblemon/mod/common/api/pokemon/PokemonProperties$Companion;parse(Ljava/lang/String;)Lcom/cobblemon/mod/common/api/pokemon/PokemonProperties;"
-            )
+            ),
+            remap = false
     )
     private PokemonProperties mcs$hatchEggPreFromCobbreedingEggParse(PokemonProperties original) {
         more_cobblemon_stats$pokemonProperties = original;
@@ -57,7 +58,8 @@ public class IncubatorBlockMixin {
             method = "createPokemonFromIncubator",
             at = @At(value = "INVOKE",
                     target = "Lcom/cobblemon/mod/common/api/pokemon/PokemonProperties$Companion;parse(Ljava/lang/String;)Lcom/cobblemon/mod/common/api/pokemon/PokemonProperties;"
-            )
+            ),
+            remap = false
     )
     private PokemonProperties mcs$hatchEggPreFromIncubator(PokemonProperties original) {
         more_cobblemon_stats$pokemonProperties = original;
@@ -67,7 +69,8 @@ public class IncubatorBlockMixin {
     @Inject(
             method = "useItemOn",
             at = @At(value = "INVOKE",
-                    target = "Lcom/cobblemon/mod/common/pokemon/Pokemon;setCaughtBall(Lcom/cobblemon/mod/common/pokeball/PokeBall;)V")
+                    target = "Lcom/cobblemon/mod/common/pokemon/Pokemon;setCaughtBall(Lcom/cobblemon/mod/common/pokeball/PokeBall;)V"),
+            remap = false
     )
     private void mcs$hatchEggPre(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult, CallbackInfoReturnable<ItemInteractionResult> cir) {
         ServerPlayer serverPlayer = (ServerPlayer) player;
