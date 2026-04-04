@@ -1,0 +1,60 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "CC0 1.0 Universal"
+
+[[mods]]
+modId = "more_cobblemon_stats"
+version = "${version}"
+displayName = "More Cobblemon Stats"
+authors = "Urkaz"
+description = '''More Cobblemon Player Statistics'''
+logoFile = "assets/morcobblemonstats/icon.png"
+
+[[dependencies.more_cobblemon_stats]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.214,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.more_cobblemon_stats]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.more_cobblemon_stats]]
+modId = "cobblemon"
+type = "required"
+versionRange = "[1.7.0, )"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.more_cobblemon_stats]]
+modId = "cobbledollars"
+type = "optional"
+versionRange = "[2.0.0, )"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.more_cobblemon_stats]]
+modId = "cobblesafari"
+type = "optional"
+versionRange = "[0.1.5, )"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.more_cobblemon_stats]]
+modId = "cobbreeding"
+type = "optional"
+versionRange = "[2.2.1, )"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "more_cobblemon_stats.mixins.json"
+
+[[mixins]]
+config = "more_cobblemon_stats.neoforge.mixins.json"

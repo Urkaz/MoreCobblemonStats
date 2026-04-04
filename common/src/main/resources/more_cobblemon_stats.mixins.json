@@ -1,0 +1,23 @@
+{
+  "required": true,
+  "package": "com.urkaz.morecobblemonstats.mixin",
+  "plugin": "com.urkaz.morecobblemonstats.mixin.MCS_MixinConfigPlugin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [],
+  "mixins": [
+    "cobbledollars.PlayerExtensionKtMixin",
+    "cobblemon.EmptyPokeBallEntityMixin",
+    "cobblemon.PokeBallItemMixin",
+    "cobblesafari.CobbleSafariMixin",
+    "cobblesafari.DungeonTpAcceptHandlerMixin",
+    "cobblesafari.IncubatorBlockMixin",
+    "cobblesafari.SafariEggNestBlockMixin",
+    "cobblesafari.TeleporterTickHandlerMixin",
+    "cobblesafari.UndergroundMinigameMixin",
+    "cobblesafari.UndergroundPCBlockMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

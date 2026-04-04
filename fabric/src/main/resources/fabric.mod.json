@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "more_cobblemon_stats",
+  "version": "${version}",
+  "name": "More Cobblemon Stats",
+  "description": "More Cobblemon Player Statistics",
+  "authors": [
+    "Urkaz"
+  ],
+  "contributors": [
+  ],
+  "license": "CC0 1.0 Universal",
+  "icon": "assets/morcobblemonstats/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.urkaz.morecobblemonstats.fabric.MoreCobblemonStatsFabric"
+    ]
+  },
+  "mixins": [
+    "more_cobblemon_stats.mixins.json",
+    "more_cobblemon_stats.fabric.mixins.json"
+  ],
+  "depends": {
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*",
+    "cobblemon": ">=1.7.0"
+  },
+  "suggests": {
+    "cobbledollars": ">=2.0.0",
+    "cobblesafari": ">=0.1.5",
+    "cobbreeding": ">=2.2.1"
+  },
+  "custom": {
+    "modmenu": {
+      "parent": "cobblemon"
+    }
+  }
+}
