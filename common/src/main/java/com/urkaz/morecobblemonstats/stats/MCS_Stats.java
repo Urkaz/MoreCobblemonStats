@@ -6,12 +6,14 @@ import com.urkaz.morecobblemonstats.stats.cobblemon.MCS_CobblemonStats;
 import com.urkaz.morecobblemonstats.stats.cobblemon_mega_showdown.MCS_MegaShowdownStats;
 import com.urkaz.morecobblemonstats.stats.cobblemon_quick_battle.MCS_CobblemonQuickBattleStats;
 import com.urkaz.morecobblemonstats.stats.cobblemonmarks.MCS_CobblemonMarksStats;
+import com.urkaz.morecobblemonstats.stats.cobblemonraiddens.MCS_CobblemonRaidDensStats;
 import com.urkaz.morecobblemonstats.stats.cobblesafari.MCS_CobbleSafariDungeonHelper;
 import com.urkaz.morecobblemonstats.stats.cobblesafari.MCS_CobbleSafariStats;
 import com.urkaz.morecobblemonstats.stats.rustlingspots.MCS_RustlingSpotsStats;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.stats.StatFormatter;
+import net.minecraft.stats.StatType;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.LinkedHashMap;
@@ -34,6 +36,10 @@ public class MCS_Stats {
         MCS_MegaShowdownStats.registerStats(stats);
         MCS_RustlingSpotsStats.registerStats(stats);
         MCS_CobblemonMarksStats.registerStats(stats);
+    }
+
+    public static void initStatScreen(StatType<ResourceLocation> custom) {
+        MCS_CobblemonRaidDensStats.initStatScreen(custom);
     }
 
     @NotNull

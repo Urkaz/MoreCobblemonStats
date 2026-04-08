@@ -27,6 +27,7 @@ public final class MoreCobblemonStatsNeoForge {
                 registry.register(customStat.getLocation(), customStat.getLocation());
                 Stats.CUSTOM.get(customStat.getLocation(), customStat.formatter());
             }));
+            MCS_Stats.initStatScreen(Stats.CUSTOM);
         });
     }
 
