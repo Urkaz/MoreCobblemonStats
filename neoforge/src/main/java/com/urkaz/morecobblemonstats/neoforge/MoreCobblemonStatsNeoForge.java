@@ -1,6 +1,6 @@
 package com.urkaz.morecobblemonstats.neoforge;
 
-import com.urkaz.morecobblemonstats.MCS_Stats;
+import com.urkaz.morecobblemonstats.stats.MCS_Stats;
 import com.urkaz.morecobblemonstats.MoreCobblemonStats;
 import com.urkaz.morecobblemonstats.commands.MCS_Commands;
 import net.minecraft.core.registries.Registries;
@@ -23,9 +23,9 @@ public final class MoreCobblemonStatsNeoForge {
     @SubscribeEvent
     public void registerContent(RegisterEvent event) {
         event.register(Registries.CUSTOM_STAT, registry -> {
-            MCS_Stats.INSTANCE.getStats().forEach(((statName, cobblemonStat) -> {
-                registry.register(cobblemonStat.getResourceLocation(), cobblemonStat.getResourceLocation());
-                Stats.CUSTOM.get(cobblemonStat.getResourceLocation(), cobblemonStat.component2());
+            MCS_Stats.INSTANCE.getCustomStats().forEach(((statName, customStat) -> {
+                registry.register(customStat.getLocation(), customStat.getLocation());
+                Stats.CUSTOM.get(customStat.getLocation(), customStat.formatter());
             }));
         });
     }

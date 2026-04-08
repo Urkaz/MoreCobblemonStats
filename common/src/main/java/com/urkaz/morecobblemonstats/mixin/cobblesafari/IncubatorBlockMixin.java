@@ -6,6 +6,7 @@ import com.cobblemon.mod.common.api.pokemon.PokemonProperties;
 import com.cobblemon.mod.common.pokemon.Pokemon;
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import com.llamalad7.mixinextras.sugar.Local;
+import com.urkaz.morecobblemonstats.stats.cobblesafari.MCS_CobbleSafariStats;
 import maxigregrze.cobblesafari.block.incubator.IncubatorBlock;
 import me.fallenbreath.conditionalmixin.api.annotation.Condition;
 import me.fallenbreath.conditionalmixin.api.annotation.Restriction;
@@ -24,7 +25,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-@Restriction(require = {@Condition("cobblesafari")})
+@Restriction(require = {@Condition(MCS_CobbleSafariStats.MOD_ID)})
 @Mixin(IncubatorBlock.class)
 public class IncubatorBlockMixin {
 

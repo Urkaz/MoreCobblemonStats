@@ -5,9 +5,9 @@ import com.cobblemon.mod.common.api.events.CobblemonEvents;
 import com.cobblemon.mod.common.battles.ActiveBattlePokemon;
 import com.cobblemon.mod.common.battles.BattleSide;
 import com.cobblemon.mod.common.battles.actor.PlayerBattleActor;
-import com.cobblemon.mod.common.pokemon.Pokemon;
-import com.urkaz.morecobblemonstats.MCS_Stats;
+import com.urkaz.morecobblemonstats.stats.MCS_Stats;
 import com.urkaz.morecobblemonstats.MoreCobblemonStats;
+import com.urkaz.morecobblemonstats.stats.cobblemon.MCS_CobblemonStats;
 import net.minecraft.server.level.ServerPlayer;
 
 public class MCS_CobblemonEventListener {
@@ -18,28 +18,28 @@ public class MCS_CobblemonEventListener {
         CobblemonEvents.TERASTALLIZATION.subscribe((event) -> {
             ServerPlayer player = event.getPokemon().getOriginalPokemon().getOwnerPlayer();
             if (player != null) {
-                player.awardStat(MCS_Stats.getStat(MCS_Stats.POKEMON_TERASTALIZED));
+                player.awardStat(MCS_Stats.getStat(MCS_CobblemonStats.POKEMON_TERASTALIZED));
             }
         });
 
         CobblemonEvents.MEGA_EVOLUTION.subscribe((event) -> {
             ServerPlayer player = event.getPokemon().getOriginalPokemon().getOwnerPlayer();
             if (player != null) {
-                player.awardStat(MCS_Stats.getStat(MCS_Stats.POKEMON_MEGAEVOLVED));
+                player.awardStat(MCS_Stats.getStat(MCS_CobblemonStats.POKEMON_MEGAEVOLVED));
             }
         });
 
         CobblemonEvents.ZPOWER_USED.subscribe((event) -> {
             ServerPlayer player = event.getPokemon().getOriginalPokemon().getOwnerPlayer();
             if (player != null) {
-                player.awardStat(MCS_Stats.getStat(MCS_Stats.POKEMON_ZMOVES_USED));
+                player.awardStat(MCS_Stats.getStat(MCS_CobblemonStats.POKEMON_ZMOVES_USED));
             }
         });
 
         CobblemonEvents.FORME_CHANGE.subscribe((event) -> {
             ServerPlayer player = event.getPokemon().getOriginalPokemon().getOwnerPlayer();
             if (player != null) {
-                player.awardStat(MCS_Stats.getStat(MCS_Stats.POKEMON_FORME_CHANGES));
+                player.awardStat(MCS_Stats.getStat(MCS_CobblemonStats.POKEMON_FORME_CHANGES));
             }
         });
 
@@ -60,7 +60,7 @@ public class MCS_CobblemonEventListener {
             if (killerActor instanceof PlayerBattleActor playerActor) {
                 ServerPlayer player = playerActor.getEntity();
                 if (player != null) {
-                    player.awardStat(MCS_Stats.getStat(MCS_Stats.POKEMON_DEFEATED));
+                    player.awardStat(MCS_Stats.getStat(MCS_CobblemonStats.POKEMON_DEFEATED));
                 }
             }
         });

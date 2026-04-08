@@ -1,7 +1,8 @@
 package com.urkaz.morecobblemonstats.mixin.cobblesafari;
 
 import com.llamalad7.mixinextras.sugar.Local;
-import com.urkaz.morecobblemonstats.MCS_Stats;
+import com.urkaz.morecobblemonstats.stats.MCS_Stats;
+import com.urkaz.morecobblemonstats.stats.cobblesafari.MCS_CobbleSafariStats;
 import maxigregrze.cobblesafari.teleporter.TeleporterTickHandler;
 import me.fallenbreath.conditionalmixin.api.annotation.Condition;
 import me.fallenbreath.conditionalmixin.api.annotation.Restriction;
@@ -20,6 +21,6 @@ public class TeleporterTickHandlerMixin {
             at = @At("HEAD")
     )
     private static void mcs$teleportToSafari(CallbackInfo ci, @Local(argsOnly = true) ServerPlayer player) {
-        player.awardStat(MCS_Stats.getStat(MCS_Stats.SAFARI_ENTER));
+        player.awardStat(MCS_Stats.getStat(MCS_CobbleSafariStats.SAFARI_ENTER));
     }
 }

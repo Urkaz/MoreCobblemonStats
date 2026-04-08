@@ -62,6 +62,7 @@ dependencies {
     modCompileOnly "maven.modrinth:cobblemon-mega-showdown:${project.megashowdown_modrinth_neoforge}"
     modCompileOnly "maven.modrinth:cobblemon-rustling-spots:${project.rustlingspots_modrinth_neoforge}"
     modCompileOnly "curse.maven:cobblemon-marks-quests-1469388:${project.marksquests_curseforge_neoforge}"
+    modCompileOnly "maven.modrinth:cobblemonraiddens:${project.raiddens_modrinth_neoforge}"
 }
 
 processResources {

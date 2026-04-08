@@ -4,6 +4,7 @@ import com.cobblemon.mod.common.api.events.CobblemonEvents;
 import com.cobblemon.mod.common.api.events.pokemon.CollectEggEvent;
 import com.cobblemon.mod.common.api.pokemon.PokemonProperties;
 import com.cobblemon.mod.common.pokemon.Pokemon;
+import com.urkaz.morecobblemonstats.stats.cobblesafari.MCS_CobbleSafariStats;
 import maxigregrze.cobblesafari.block.misc.SafariEggNestBlock;
 import me.fallenbreath.conditionalmixin.api.annotation.Condition;
 import me.fallenbreath.conditionalmixin.api.annotation.Restriction;
@@ -18,7 +19,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-@Restriction(require = {@Condition("cobblesafari")})
+@Restriction(require = {@Condition(MCS_CobbleSafariStats.MOD_ID)})
 @Mixin(SafariEggNestBlock.class)
 public class SafariEggNestBlockMixin {
 

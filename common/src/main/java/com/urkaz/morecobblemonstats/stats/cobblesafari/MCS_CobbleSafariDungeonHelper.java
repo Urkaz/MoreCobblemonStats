@@ -1,9 +1,8 @@
-package com.urkaz.morecobblemonstats.cobblesafari;
+package com.urkaz.morecobblemonstats.stats.cobblesafari;
 
-import com.cobblemon.mod.common.api.stats.CobblemonStats;
+import com.urkaz.morecobblemonstats.stats.MCS_Stats;
 import maxigregrze.cobblesafari.dungeon.DungeonConfig;
 import maxigregrze.cobblesafari.dungeon.DungeonDimensions;
-import net.minecraft.stats.StatFormatter;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.LinkedHashMap;
@@ -12,20 +11,20 @@ import java.util.Map;
 
 public class MCS_CobbleSafariDungeonHelper {
 
-    private static final Map<String, CobblemonStats.CobblemonStat> dungeonStats = new LinkedHashMap<String, CobblemonStats.CobblemonStat>();
+    private static final Map<String, MCS_Stats.CustomStat> dungeonStats = new LinkedHashMap<>();
 
-    public static void autoRegisterDungeonStats(Map<String, CobblemonStats.CobblemonStat> stats) {
+    public static void autoRegisterDungeonStats(Map<String, MCS_Stats.CustomStat> stats) {
         List<DungeonConfig> dungeons = DungeonDimensions.getAllDungeons();
         for (DungeonConfig entry : dungeons) {
             String statName = entry.getDimensionId().split(":")[1] + "_entered";
-            CobblemonStats.CobblemonStat dimensionStat = new CobblemonStats.CobblemonStat(statName, StatFormatter.DEFAULT);
+            MCS_Stats.CustomStat dimensionStat = new MCS_Stats.CustomStat(MCS_CobbleSafariStats.MOD_ID, statName);
 
             dungeonStats.put(entry.getDimensionId(), dimensionStat);
             stats.put(statName, dimensionStat);
         }
     }
 
-    public static CobblemonStats.CobblemonStat getDimensionStat(@NotNull String dimensionID) {
+    public static MCS_Stats.CustomStat getDimensionStat(@NotNull String dimensionID) {
         return dungeonStats.get(dimensionID);
     }
 }

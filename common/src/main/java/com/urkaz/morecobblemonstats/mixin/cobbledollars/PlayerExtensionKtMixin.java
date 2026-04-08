@@ -1,7 +1,8 @@
 package com.urkaz.morecobblemonstats.mixin.cobbledollars;
 
 import com.llamalad7.mixinextras.sugar.Local;
-import com.urkaz.morecobblemonstats.MCS_Stats;
+import com.urkaz.morecobblemonstats.stats.MCS_Stats;
+import com.urkaz.morecobblemonstats.stats.cobbledollars.MCS_CobbledollarsStats;
 import fr.harmex.cobbledollars.common.utils.extensions.PlayerExtensionKt;
 import me.fallenbreath.conditionalmixin.api.annotation.Condition;
 import me.fallenbreath.conditionalmixin.api.annotation.Restriction;
@@ -13,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import java.math.BigInteger;
 
-@Restriction(require = {@Condition("cobbledollars")})
+@Restriction(require = {@Condition(MCS_CobbledollarsStats.MOD_ID)})
 @Mixin(PlayerExtensionKt.class)
 public class PlayerExtensionKtMixin {
 
@@ -25,9 +26,9 @@ public class PlayerExtensionKtMixin {
         BigInteger current = PlayerExtensionKt.getCobbleDollars(player);
         int diff = newAmount.subtract(current).intValue();
         if (diff > 0) {
-            player.awardStat(MCS_Stats.getStat(MCS_Stats.COBBLEDOLLARS_EARNED), diff);
+            player.awardStat(MCS_Stats.getStat(MCS_CobbledollarsStats.COBBLEDOLLARS_EARNED), diff);
         } else if (diff < 0) {
-            player.awardStat(MCS_Stats.getStat(MCS_Stats.COBBLEDOLLARS_LOST), Math.abs(diff));
+            player.awardStat(MCS_Stats.getStat(MCS_CobbledollarsStats.COBBLEDOLLARS_LOST), Math.abs(diff));
         }
     }
 }

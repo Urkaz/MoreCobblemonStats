@@ -48,13 +48,14 @@ Adds more Stats to Cobblemon and some of its addons.
 
 ## TODO
 
-### High Priority
+### Stats
+
+#### High Priority
 
 - RaidDens: Completed
-- Cobblemon: Pokémon Fainted?
-- CobbleCuisine?
+- CobbleCuisine/Cooking pot?
 
-### Normal Priority
+#### Normal Priority
 
 - ResearchTasks: Tasks Completed
 - ResearchTasks: Entries Completed
@@ -63,10 +64,16 @@ Adds more Stats to Cobblemon and some of its addons.
 - ShadowedHearts: Shadow Pokémon caught
 - ShadowedHearts: Shadow Pokémon
 
-### Lower Priority
+#### Lower Priority
 
 - Expeditions: Completed
 - Expeditions: Failed
 - BattleTower: Beaten floors
 - BattleTower: Beaten times
 - CobbleBase?
+
+### Other
+
+- FTB Quests integration?
+  - All implemented stats
+  - Cobblemon Raid Dens

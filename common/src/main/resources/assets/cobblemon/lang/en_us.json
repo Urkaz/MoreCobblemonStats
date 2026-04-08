@@ -7,22 +7,22 @@
   "stat.cobblemon.pokemon_forme_changes": "Pokémon Forme Changes",
   "stat.cobblemon.pokemon_defeated": "Pokémon Defeated",
 
-  "stat.cobblemon.cobbledollars_lost": "Cobbledollars Lost",
-  "stat.cobblemon.cobbledollars_earned": "Cobbledollars Earned",
+  "stat.cobbledollars.cobbledollars_lost": "Cobbledollars Lost",
+  "stat.cobbledollars.cobbledollars_earned": "Cobbledollars Earned",
 
-  "stat.cobblemon.hoopa_rings_used": "Hoopa Rings Traversed",
-  "stat.cobblemon.safari_entered": "Safari Expeditions",
-  "stat.cobblemon.underground_treasures_found": "Underground Treasures Found",
-  "stat.cobblemon.dungeon_underground_entered": "Underground Adventures",
-  "stat.cobblemon.dungeon_distortion_entered": "Distortion World Visits",
-  "stat.cobblemon.secret_base_flags_stolen": "Secret Base Flags Stolen",
-  "stat.cobblemon.reward_balloons_looted": "Reward Balloons Looted",
+  "stat.cobblesafari.hoopa_rings_used": "Hoopa Rings Traversed",
+  "stat.cobblesafari.safari_entered": "Safari Expeditions",
+  "stat.cobblesafari.underground_treasures_found": "Underground Treasures Found",
+  "stat.cobblesafari.dungeon_underground_entered": "Underground Adventures",
+  "stat.cobblesafari.dungeon_distortion_entered": "Distortion World Visits",
+  "stat.cobblesafari.secret_base_flags_stolen": "Secret Base Flags Stolen",
+  "stat.cobblesafari.reward_balloons_looted": "Reward Balloons Looted",
 
-  "stat.cobblemon.quick_battles_total": "Pokémon Quick Battles Total",
-  "stat.cobblemon.quick_battles_won": "Pokémon Quick Battles Won",
-  "stat.cobblemon.quick_battles_lost": "Pokémon Quick Battles Lost",
+  "stat.cobblemon_quick_battle.quick_battles_total": "Pokémon Quick Battles Total",
+  "stat.cobblemon_quick_battle.quick_battles_won": "Pokémon Quick Battles Won",
+  "stat.cobblemon_quick_battle.quick_battles_lost": "Pokémon Quick Battles Lost",
 
-  "stat.cobblemon.rustling_spots_examined": "Rustling Spots Examined",
+  "stat.rustlingspots.rustling_spots_examined": "Rustling Spots Examined",
 
-  "stat.cobblemon.pokemon_marks_obtained": "Pokémon Marks Obtained"
+  "stat.cobblemonmarks.pokemon_marks_obtained": "Pokémon Marks Obtained"
 }
