@@ -12,6 +12,7 @@
     "cobblemon_quick_battle.QuickBattleInitiatePacketMixin",
     "cobblemon_ultrabeast.WormholeEntityMixin",
     "cobblemonmarks.MarksHandlerMixin",
+    "cobblemonresearchtasks.CobblemonMasteryEventHandlerMixin",
     "cobblemonresearchtasks.MasteryManagerMixin",
     "cobblesafari.BalloonEntityMixin",
     "cobblesafari.CobbleSafariMixin",
