@@ -10,6 +10,7 @@
     "cobblemon.EmptyPokeBallEntityMixin",
     "cobblemon.PokeBallItemMixin",
     "cobblemon_quick_battle.QuickBattleInitiatePacketMixin",
+    "cobblemon_snap.CameraItemMixin",
     "cobblemon_ultrabeast.WormholeEntityMixin",
     "cobblemonmarks.MarksHandlerMixin",
     "cobblemonresearchtasks.CobblemonMasteryEventHandlerMixin",

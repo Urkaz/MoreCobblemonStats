@@ -52,6 +52,7 @@ dependencies {
         modImplementation "me.shedaniel.cloth:cloth-config-fabric:${project.clothconfig_fabric}"
         modImplementation "maven.modrinth:cobblemon-research-tasks:${project.researchtasks_modrinth_fabric}"
         modImplementation "blank:UltraBeasts-3.1+Cobblemon-1.7.1"
+        modImplementation "maven.modrinth:cobblemon-snap:${project.snap_modrinth_fabric}"
     } else {
         modCompileOnly "maven.modrinth:cobbledollars:${project.cobbledollars_modrinth_fabric}"
         modCompileOnly "maven.modrinth:cobblesafari:${project.cobblesafari_modrinth_fabric}"
@@ -62,6 +63,7 @@ dependencies {
         modCompileOnly "maven.modrinth:cobblemonraiddens:${project.raiddens_modrinth_fabric}"
         modCompileOnly "maven.modrinth:cobblemon-research-tasks:${project.researchtasks_modrinth_fabric}"
         modCompileOnly "blank:UltraBeasts-3.1+Cobblemon-1.7.1"
+        modCompileOnly "maven.modrinth:cobblemon-snap:${project.snap_modrinth_fabric}"
     }
 }
 

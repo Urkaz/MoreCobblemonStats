@@ -5,6 +5,7 @@ import com.urkaz.morecobblemonstats.stats.cobbledollars.MCS_CobbledollarsStats;
 import com.urkaz.morecobblemonstats.stats.cobblemon.MCS_CobblemonStats;
 import com.urkaz.morecobblemonstats.stats.cobblemon_mega_showdown.MCS_CobblemonMegaShowdownStats;
 import com.urkaz.morecobblemonstats.stats.cobblemon_quick_battle.MCS_CobblemonQuickBattleStats;
+import com.urkaz.morecobblemonstats.stats.cobblemon_snap.MCS_CobblemonSnapStats;
 import com.urkaz.morecobblemonstats.stats.cobblemon_ultrabeast.MCS_CobblemonUltraBeastStats;
 import com.urkaz.morecobblemonstats.stats.cobblemonmarks.MCS_CobblemonMarksStats;
 import com.urkaz.morecobblemonstats.stats.cobblemonraiddens.MCS_CobblemonRaidDensStats;
@@ -40,6 +41,7 @@ public class MCS_Stats {
         MCS_CobblemonMarksStats.registerStats(stats);
         MCS_CobblemonUltraBeastStats.registerStats(stats);
         MCS_CobblemonResearchTasksStats.registerStats(stats);
+        MCS_CobblemonSnapStats.registerStats(stats);
     }
 
     @NotNull

@@ -24,8 +24,6 @@ Also applies some fixes to some of those addons.
     * Underground Adventures
     * Distortion World Visits
   * Secret Base Flags Stolen
-  * Pokémon Eggs Hatched (from Incubator)
-  * Pokémon Eggs Collected (from Incubator)
   * Reward Balloons Looted
 * [Cobblemon Quick Battle (1.3.8)](https://modrinth.com/mod/cobblemon-quick-battle)
   * Pokémon Total Quick Battles
@@ -37,45 +35,43 @@ Also applies some fixes to some of those addons.
   * Pokémon Marks Obtained
 * [Cobblemon: Research Tasks (2.0)](https://modrinth.com/mod/cobblemon-research-tasks) (Fabric Only)
   * Taks Completed
-  * Entries Completed _(by claiming the completed reward)_
+  * Entries Completed: _(by claiming the completed reward)_
 * [Cobblemon Ultra-Beasts (3.1)](https://www.curseforge.com/minecraft/mc-mods/cobblemon-ultra-beasts) (Fabric Only)
   * Ultra Wormholes Entered
+* [Cobblemon Snap (1.1.2)](https://modrinth.com/mod/cobblemon-snap)
+  * Photos Taken: _(by just taking photos)_
+  * Photos Registered: _(photos taken that contained a Pokémon)_
+  * Snapdex Entries: _(entries considered "captured" in the Snapdex)_
+  * Total Pokémon Captured: _(total count of Pokémon that appeared in photos)_
 
-## Fixes/Enhancements:
+## Fixes/Enhancements
 
+* [CobbleSafari (0.2.0)](https://modrinth.com/mod/cobblesafari)
+  * **[Enhancement]**: Incubators now count for "Pokémon Eggs Hatched".
+  * **[Enhancement]**: Wild Eggs now count for "Pokémon Eggs Collected"
 * [Cobblemon Quick Battle (1.3.8)](https://modrinth.com/mod/cobblemon-quick-battle)
-  * **[Fixed]**: Now triggers BATTLE_FAINTED events so other mods could handle the defeat.
+  * **[Enhancement]**: Now triggers BATTLE_FAINTED events so other mods could handle the defeat.
 * [Cobblemon: Research Tasks (2.0)](https://modrinth.com/mod/cobblemon-research-tasks) (Fabric Only)
-  * **[Fixed]**: Was not handling evolution through the UI with the Pokémon inside the PokéBall.
+  * **[Fix]**: Was not handling evolution through the UI with the Pokémon inside the PokéBall.
 
 ## New features
 
 * Adds a new command (/mcs shiny_check &lt;player>) to check that player's shiny chance.
 
-## TODO
+# TODO List
 
-### Stats
+## Stats
 
-#### High Priority
-
-- RTC: Track number of Trainer battles?
-
-#### Normal Priority
-
-- Snap: Photos taken
 - ShadowedHearts: Pokémon Purified
 - ShadowedHearts: Shadow Pokémon caught
 - ShadowedHearts: Shadow Pokémon
 - Expeditions Board: Completed
 - Expeditions Board: Failed
-
-#### Lower Priority
-
 - BattleTower: Beaten floors
 - BattleTower: Beaten times
 - PokeBike: Distance traveled
 
-### Other
+## Other
 
 - FTB Quests integration?
   - All implemented stats

@@ -29,7 +29,12 @@
   "stat.cobblemon_ultrabeast.ultra_wormholes_entered": "Ultra Wormholes Entered",
 
   "stat.cobblemonresearchtasks.tasks_completed": "Tasks Completed",
-  "stat.cobblemonresearchtasks.entries_completed": "Entries Completed"
+  "stat.cobblemonresearchtasks.entries_completed": "Entries Completed",
+
+  "stat.cobblemon_snap.photos_taken": "Photos Taken",
+  "stat.cobblemon_snap.photos_recorded": "Photos Recorded",
+  "stat.cobblemon_snap.total_pokemon_captured": "Total Pokémon photographed",
+  "stat.cobblemon_snap.unique_pokemon_captured": "Pokémon Captured"
 
 
 }
