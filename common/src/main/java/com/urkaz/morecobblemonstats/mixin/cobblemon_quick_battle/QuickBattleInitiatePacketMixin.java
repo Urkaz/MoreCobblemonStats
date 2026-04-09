@@ -1,5 +1,17 @@
 package com.urkaz.morecobblemonstats.mixin.cobblemon_quick_battle;
 
+import com.cobblemon.mod.common.api.battles.interpreter.BasicContext;
+import com.cobblemon.mod.common.api.battles.interpreter.BattleContext;
+import com.cobblemon.mod.common.api.battles.model.PokemonBattle;
+import com.cobblemon.mod.common.api.events.CobblemonEvents;
+import com.cobblemon.mod.common.api.events.battles.BattleFaintedEvent;
+import com.cobblemon.mod.common.api.moves.Move;
+import com.cobblemon.mod.common.battles.BattleBuilder;
+import com.cobblemon.mod.common.battles.BattleRegistry;
+import com.cobblemon.mod.common.battles.BattleStartResult;
+import com.cobblemon.mod.common.battles.pokemon.BattlePokemon;
+import com.cobblemon.mod.common.entity.pokemon.PokemonEntity;
+import com.cobblemon.mod.common.pokemon.Pokemon;
 import com.llamalad7.mixinextras.sugar.Local;
 import com.urkaz.morecobblemonstats.stats.MCS_Stats;
 import com.urkaz.morecobblemonstats.stats.cobblemon_quick_battle.MCS_CobblemonQuickBattleStats;
@@ -30,6 +42,23 @@ public class QuickBattleInitiatePacketMixin {
         player.awardStat(MCS_Stats.getStat(MCS_CobblemonQuickBattleStats.QUICK_BATTLE_TOTAL));
         if (result.isVictory()) {
             player.awardStat(MCS_Stats.getStat(MCS_CobblemonQuickBattleStats.QUICK_BATTLE_WON));
+
+            // Fake a battle to post BATTLE_FAINTED event
+            try {
+                Pokemon targetPokemon = (Pokemon) finalTargetPokemon;
+                PokemonEntity targetPokemonEntity = targetPokemon.getEntity();
+                Pokemon playerPokemon = (Pokemon) finalSelectedPokemon;
+
+                BattleBuilder.INSTANCE.pve(player, targetPokemonEntity, playerPokemon.getUuid());
+                PokemonBattle battle = BattleRegistry.getBattle(targetPokemonEntity.getBattleId());
+                BattleContext battleContext = new BasicContext(((Move) finalSelectedMove).getName(), 1, BattleContext.Type.FAINT, BattlePokemon.Companion.playerOwned(playerPokemon));
+                BattlePokemon faintedBattlePokemon = battle.getBattlePokemon("p2a", targetPokemon.getUuid().toString());
+                battle.end();
+
+                CobblemonEvents.BATTLE_FAINTED.post(new BattleFaintedEvent(battle, faintedBattlePokemon, battleContext, "p2a"));
+            }
+            catch (Throwable ignored) {
+            }
         } else {
             player.awardStat(MCS_Stats.getStat(MCS_CobblemonQuickBattleStats.QUICK_BATTLE_LOST));
         }
