@@ -20,7 +20,6 @@ public class MoreCobblemonStatsFabric implements ModInitializer {
             Registry.register(BuiltInRegistries.CUSTOM_STAT, customStat.getLocation(), customStat.getLocation());
             Stats.CUSTOM.get(customStat.getLocation(), customStat.formatter());
         }));
-        MCS_Stats.initStatScreen(Stats.CUSTOM);
 
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
             MCS_Commands.register(dispatcher);

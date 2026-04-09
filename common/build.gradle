@@ -29,4 +29,6 @@ dependencies {
     modCompileOnly "maven.modrinth:cobblemon-rustling-spots:${project.rustlingspots_modrinth_fabric}"
     modCompileOnly "curse.maven:cobblemon-marks-quests-1469388:${project.marksquests_curseforge_fabric}"
     modCompileOnly "maven.modrinth:cobblemonraiddens:${project.raiddens_modrinth_fabric}"
+    modCompileOnly "maven.modrinth:cobblemon-research-tasks:${project.researchtasks_modrinth_fabric}"
+    modCompileOnly "blank:UltraBeasts-3.1+Cobblemon-1.7.1"
 }

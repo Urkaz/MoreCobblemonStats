@@ -24,5 +24,12 @@
 
   "stat.rustlingspots.rustling_spots_examined": "Rustling Spots Examined",
 
-  "stat.cobblemonmarks.pokemon_marks_obtained": "Pokémon Marks Obtained"
+  "stat.cobblemonmarks.pokemon_marks_obtained": "Pokémon Marks Obtained",
+
+  "stat.cobblemon_ultrabeast.ultra_wormholes_entered": "Ultra Wormholes Entered",
+
+  "stat.cobblemonresearchtasks.tasks_completed": "Tasks Completed",
+  "stat.cobblemonresearchtasks.entries_completed": "Entries Completed"
+
+
 }

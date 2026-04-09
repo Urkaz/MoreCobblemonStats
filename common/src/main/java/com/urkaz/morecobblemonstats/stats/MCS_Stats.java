@@ -3,10 +3,12 @@ package com.urkaz.morecobblemonstats.stats;
 import com.urkaz.morecobblemonstats.MoreCobblemonStats;
 import com.urkaz.morecobblemonstats.stats.cobbledollars.MCS_CobbledollarsStats;
 import com.urkaz.morecobblemonstats.stats.cobblemon.MCS_CobblemonStats;
-import com.urkaz.morecobblemonstats.stats.cobblemon_mega_showdown.MCS_MegaShowdownStats;
+import com.urkaz.morecobblemonstats.stats.cobblemon_mega_showdown.MCS_CobblemonMegaShowdownStats;
 import com.urkaz.morecobblemonstats.stats.cobblemon_quick_battle.MCS_CobblemonQuickBattleStats;
+import com.urkaz.morecobblemonstats.stats.cobblemon_ultrabeast.MCS_CobblemonUltraBeastStats;
 import com.urkaz.morecobblemonstats.stats.cobblemonmarks.MCS_CobblemonMarksStats;
 import com.urkaz.morecobblemonstats.stats.cobblemonraiddens.MCS_CobblemonRaidDensStats;
+import com.urkaz.morecobblemonstats.stats.cobblemonresearchtasks.MCS_CobblemonResearchTasksStats;
 import com.urkaz.morecobblemonstats.stats.cobblesafari.MCS_CobbleSafariDungeonHelper;
 import com.urkaz.morecobblemonstats.stats.cobblesafari.MCS_CobbleSafariStats;
 import com.urkaz.morecobblemonstats.stats.rustlingspots.MCS_RustlingSpotsStats;
@@ -33,13 +35,11 @@ public class MCS_Stats {
         MCS_CobbledollarsStats.registerStats(stats);
         MCS_CobbleSafariStats.registerStats(stats);
         MCS_CobblemonQuickBattleStats.registerStats(stats);
-        MCS_MegaShowdownStats.registerStats(stats);
+        MCS_CobblemonMegaShowdownStats.registerStats(stats);
         MCS_RustlingSpotsStats.registerStats(stats);
         MCS_CobblemonMarksStats.registerStats(stats);
-    }
-
-    public static void initStatScreen(StatType<ResourceLocation> custom) {
-        MCS_CobblemonRaidDensStats.initStatScreen(custom);
+        MCS_CobblemonUltraBeastStats.registerStats(stats);
+        MCS_CobblemonResearchTasksStats.registerStats(stats);
     }
 
     @NotNull

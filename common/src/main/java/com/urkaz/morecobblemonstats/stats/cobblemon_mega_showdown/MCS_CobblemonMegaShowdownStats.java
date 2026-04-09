@@ -5,7 +5,7 @@ import com.urkaz.morecobblemonstats.stats.MCS_Stats;
 
 import java.util.Map;
 
-public class MCS_MegaShowdownStats {
+public class MCS_CobblemonMegaShowdownStats {
 
     public static final String MOD_ID = "cobblemon_mega_showdown";
 
