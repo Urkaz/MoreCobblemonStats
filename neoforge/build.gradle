@@ -56,17 +56,19 @@ dependencies {
     include 'com.github.Fallen-Breath.conditional-mixin:conditional-mixin-neoforge:0.6.4'
 
     modImplementation "com.cobblemon:neoforge:${project.cobblemon_version}"
+
+    // Mods needed during compile
     modCompileOnly "maven.modrinth:cobbledollars:${project.cobbledollars_modrinth_neoforge}"
     modCompileOnly "maven.modrinth:cobblesafari:${project.cobblesafari_modrinth_neoforge}"
     modCompileOnly "maven.modrinth:cobblemon-quick-battle:${project.quickbattle_modrinth_neoforge}"
     modCompileOnly "maven.modrinth:cobblemon-mega-showdown:${project.megashowdown_modrinth_neoforge}"
     modCompileOnly "maven.modrinth:cobblemon-rustling-spots:${project.rustlingspots_modrinth_neoforge}"
-    modCompileOnly "curse.maven:cobblemon-marks-quests-1469388:${project.marksquests_curseforge_neoforge}"
     modCompileOnly "maven.modrinth:cobblemonraiddens:${project.raiddens_modrinth_neoforge}"
     modCompileOnly "maven.modrinth:cobblemon-snap:${project.snap_modrinth_neoforge}"
     modCompileOnly "maven.modrinth:pokebike:${project.pokebike_modrinth_neoforge}"
-    modCompileOnly "software.bernie.geckolib:geckolib-neoforge-${project.minecraft_version}:${project.geckolib_version}"
     modCompileOnly "maven.modrinth:cobblemon_expeditions:${project.expeditions_modrinth_neoforge}"
+    modCompileOnly "maven.modrinth:cobblemon-shadowedhearts:${project.shadowedhearts_modrinth_neoforge}"
+    modCompileOnly "curse.maven:cobblemon-marks-quests-1469388:${project.marksquests_curseforge_neoforge}"
 }
 
 processResources {
