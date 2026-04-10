@@ -45,6 +45,14 @@ Also applies some fixes to some of those addons.
   * Total Pokémon Captured: _(total count of Pokémon that appeared in photos)_
 * [PokeBike (1.8)](https://modrinth.com/mod/pokebike)
   * Distance by Bike
+* [Cobblemon Expeditions (1.1.2/3)](https://modrinth.com/mod/cobblemon_expeditions)
+  * Expeditions Started
+  * Expeditions Canceled
+  * Expeditions Finished
+  * Expeditions With Failed Result
+  * Expeditions With Partial Result
+  * Expeditions With Great Result
+  * Expeditions With Successful Result
 
 ## Fixes/Enhancements
 
@@ -67,11 +75,8 @@ Also applies some fixes to some of those addons.
 - ShadowedHearts: Pokémon Purified
 - ShadowedHearts: Shadow Pokémon caught
 - ShadowedHearts: Shadow Pokémon
-- Expeditions Board: Completed
-- Expeditions Board: Failed
 - BattleTower: Beaten floors
 - BattleTower: Beaten times
-- PokeBike: Distance traveled
 
 ## Other
 

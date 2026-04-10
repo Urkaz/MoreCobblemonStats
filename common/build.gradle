@@ -34,4 +34,5 @@ dependencies {
     modCompileOnly "maven.modrinth:cobblemon-snap:${project.snap_modrinth_fabric}"
     modCompileOnly "software.bernie.geckolib:geckolib-fabric-${project.minecraft_version}:${project.geckolib_version}"
     modCompileOnly "maven.modrinth:pokebike:${project.pokebike_modrinth_fabric}"
+    modCompileOnly "maven.modrinth:cobblemon_expeditions:${project.expeditions_modrinth_fabric}"
 }

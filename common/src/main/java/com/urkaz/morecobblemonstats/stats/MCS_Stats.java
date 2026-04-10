@@ -3,6 +3,7 @@ package com.urkaz.morecobblemonstats.stats;
 import com.urkaz.morecobblemonstats.MoreCobblemonStats;
 import com.urkaz.morecobblemonstats.stats.cobbledollars.MCS_CobbledollarsStats;
 import com.urkaz.morecobblemonstats.stats.cobblemon.MCS_CobblemonStats;
+import com.urkaz.morecobblemonstats.stats.cobblemon_expeditions.MCS_CobblemonExpeditionsStats;
 import com.urkaz.morecobblemonstats.stats.cobblemon_mega_showdown.MCS_CobblemonMegaShowdownStats;
 import com.urkaz.morecobblemonstats.stats.cobblemon_quick_battle.MCS_CobblemonQuickBattleStats;
 import com.urkaz.morecobblemonstats.stats.cobblemon_snap.MCS_CobblemonSnapStats;
@@ -44,6 +45,7 @@ public class MCS_Stats {
         MCS_CobblemonResearchTasksStats.registerStats(stats);
         MCS_CobblemonSnapStats.registerStats(stats);
         MCS_PokeBikeStats.registerStats(stats);
+        MCS_CobblemonExpeditionsStats.registerStats(stats);
     }
 
     @NotNull

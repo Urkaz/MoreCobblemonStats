@@ -36,7 +36,13 @@
   "stat.cobblemon_snap.total_pokemon_captured": "Total Pokémon photographed",
   "stat.cobblemon_snap.unique_pokemon_captured": "Pokémon Captured",
 
-  "stat.pokebike.biking": "Distance by Bike"
+  "stat.pokebike.biking": "Distance by Bike",
 
-
+  "stat.cobblemon_expeditions.expeditions": "Expeditions Started",
+  "stat.cobblemon_expeditions.expeditions_canceled": "Expeditions Canceled",
+  "stat.cobblemon_expeditions.expeditions_finished": "Expeditions Finished",
+  "stat.cobblemon_expeditions.expedition_result_failed": "Expeditions With Failed Result",
+  "stat.cobblemon_expeditions.expedition_result_partial": "Expeditions With Partial Result",
+  "stat.cobblemon_expeditions.expedition_result_great": "Expeditions With Great Result",
+  "stat.cobblemon_expeditions.expedition_result_success": "Expeditions With Successful Result"
 }

@@ -54,6 +54,7 @@ dependencies {
         modImplementation "blank:UltraBeasts-3.1+Cobblemon-1.7.1"
         modImplementation "maven.modrinth:cobblemon-snap:${project.snap_modrinth_fabric}"
         modImplementation "maven.modrinth:pokebike:${project.pokebike_modrinth_fabric}"
+        modImplementation "maven.modrinth:cobblemon_expeditions:${project.expeditions_modrinth_fabric}"
     } else {
         modCompileOnly "maven.modrinth:cobbledollars:${project.cobbledollars_modrinth_fabric}"
         modCompileOnly "maven.modrinth:cobblesafari:${project.cobblesafari_modrinth_fabric}"
@@ -67,6 +68,7 @@ dependencies {
         modCompileOnly "maven.modrinth:cobblemon-snap:${project.snap_modrinth_fabric}"
         modCompileOnly "software.bernie.geckolib:geckolib-fabric-${project.minecraft_version}:${project.geckolib_version}"
         modCompileOnly "maven.modrinth:pokebike:${project.pokebike_modrinth_fabric}"
+        modCompileOnly "maven.modrinth:cobblemon_expeditions:${project.expeditions_modrinth_fabric}"
     }
 }
 

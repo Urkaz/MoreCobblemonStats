@@ -66,6 +66,7 @@ dependencies {
     modCompileOnly "maven.modrinth:cobblemon-snap:${project.snap_modrinth_neoforge}"
     modCompileOnly "maven.modrinth:pokebike:${project.pokebike_modrinth_neoforge}"
     modCompileOnly "software.bernie.geckolib:geckolib-neoforge-${project.minecraft_version}:${project.geckolib_version}"
+    modCompileOnly "maven.modrinth:cobblemon_expeditions:${project.expeditions_modrinth_neoforge}"
 }
 
 processResources {
