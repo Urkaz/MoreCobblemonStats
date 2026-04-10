@@ -9,16 +9,15 @@ import com.urkaz.morecobblemonstats.stats.cobblemon_quick_battle.MCS_CobblemonQu
 import com.urkaz.morecobblemonstats.stats.cobblemon_snap.MCS_CobblemonSnapStats;
 import com.urkaz.morecobblemonstats.stats.cobblemon_ultrabeast.MCS_CobblemonUltraBeastStats;
 import com.urkaz.morecobblemonstats.stats.cobblemonmarks.MCS_CobblemonMarksStats;
-import com.urkaz.morecobblemonstats.stats.cobblemonraiddens.MCS_CobblemonRaidDensStats;
 import com.urkaz.morecobblemonstats.stats.cobblemonresearchtasks.MCS_CobblemonResearchTasksStats;
 import com.urkaz.morecobblemonstats.stats.cobblesafari.MCS_CobbleSafariDungeonHelper;
 import com.urkaz.morecobblemonstats.stats.cobblesafari.MCS_CobbleSafariStats;
 import com.urkaz.morecobblemonstats.stats.pokebike.MCS_PokeBikeStats;
 import com.urkaz.morecobblemonstats.stats.rustlingspots.MCS_RustlingSpotsStats;
+import com.urkaz.morecobblemonstats.stats.shadowedhearts.MCS_ShadowedHeartsStats;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.stats.StatFormatter;
-import net.minecraft.stats.StatType;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.LinkedHashMap;
@@ -46,6 +45,7 @@ public class MCS_Stats {
         MCS_CobblemonSnapStats.registerStats(stats);
         MCS_PokeBikeStats.registerStats(stats);
         MCS_CobblemonExpeditionsStats.registerStats(stats);
+        MCS_ShadowedHeartsStats.registerStats(stats);
     }
 
     @NotNull

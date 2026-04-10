@@ -72,6 +72,8 @@ dependencies {
     // Random runtime only mods and dependencies from the ones above
     modLocalRuntime "com.terraformersmc:modmenu:${project.modmenu_version}"
     modLocalRuntime "maven.modrinth:yeetus-experimentus:${project.yeetus_version}"
+    modLocalRuntime "maven.modrinth:rctmod:${project.rct_version}"
+    modLocalRuntime "maven.modrinth:rctapi:${project.rctapi_version}"
 
     modLocalRuntime "io.wispforest:accessories-fabric:${project.accessories_version}"
     modLocalRuntime "io.wispforest:owo-lib:${project.owo_version}"

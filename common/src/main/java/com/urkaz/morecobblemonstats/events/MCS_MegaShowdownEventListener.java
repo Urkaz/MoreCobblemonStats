@@ -12,7 +12,7 @@ import net.minecraft.server.level.ServerPlayer;
 
 public class MCS_MegaShowdownEventListener {
     public static void registerEvents() {
-        if (!MCS_Platform.isModLoaded("cobblemon_mega_showdown")) return;
+        if (!MCS_Platform.isModLoaded(MCS_CobblemonMegaShowdownStats.MOD_ID)) return;
 
         MoreCobblemonStats.LOGGER.info("Registering MegaShowdown Event Listeners...");
 

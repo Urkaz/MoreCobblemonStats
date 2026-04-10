@@ -18,7 +18,7 @@
   "stat.cobblesafari.secret_base_flags_stolen": "Secret Base Flags Stolen",
   "stat.cobblesafari.reward_balloons_looted": "Reward Balloons Looted",
 
-  "stat.cobblemon_quick_battle.quick_battles_total": "Pokémon Quick Battles Total",
+  "stat.cobblemon_quick_battle.quick_battles_total": "Pokémon Quick Battles",
   "stat.cobblemon_quick_battle.quick_battles_won": "Pokémon Quick Battles Won",
   "stat.cobblemon_quick_battle.quick_battles_lost": "Pokémon Quick Battles Lost",
 
@@ -44,5 +44,10 @@
   "stat.cobblemon_expeditions.expedition_result_failed": "Expeditions With Failed Result",
   "stat.cobblemon_expeditions.expedition_result_partial": "Expeditions With Partial Result",
   "stat.cobblemon_expeditions.expedition_result_great": "Expeditions With Great Result",
-  "stat.cobblemon_expeditions.expedition_result_success": "Expeditions With Successful Result"
+  "stat.cobblemon_expeditions.expedition_result_success": "Expeditions With Successful Result",
+
+  "stat.shadowedhearts.shadow_pokemon_defeated": "Shadow Pokémon Defeated",
+  "stat.shadowedhearts.shadow_pokemon_caught": "Shadow Pokémon Caught",
+  "stat.shadowedhearts.shadow_pokemon_purified": "Shadow Pokémon Purified",
+  "stat.shadowedhearts.shadow_pokemon_snag": "Shadow Pokémon Snagged"
 }

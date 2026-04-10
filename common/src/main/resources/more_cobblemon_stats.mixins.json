@@ -27,7 +27,8 @@
     "cobblesafari.TeleporterTickHandlerMixin",
     "cobblesafari.UndergroundMinigameMixin",
     "pokebike.ServerPlayerBikingMixin",
-    "rustlingspots.SpotRewardResolverMixin"
+    "rustlingspots.SpotRewardResolverMixin",
+    "shadowedhearts.ModCriteriaTriggersMixin"
   ],
   "injectors": {
     "defaultRequire": 1
