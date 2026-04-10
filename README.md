@@ -43,6 +43,8 @@ Also applies some fixes to some of those addons.
   * Photos Registered: _(photos taken that contained a Pokémon)_
   * Snapdex Entries: _(entries considered "captured" in the Snapdex)_
   * Total Pokémon Captured: _(total count of Pokémon that appeared in photos)_
+* [PokeBike (1.8)](https://modrinth.com/mod/pokebike)
+  * Distance by Bike
 
 ## Fixes/Enhancements
 

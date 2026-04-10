@@ -12,6 +12,7 @@ import com.urkaz.morecobblemonstats.stats.cobblemonraiddens.MCS_CobblemonRaidDen
 import com.urkaz.morecobblemonstats.stats.cobblemonresearchtasks.MCS_CobblemonResearchTasksStats;
 import com.urkaz.morecobblemonstats.stats.cobblesafari.MCS_CobbleSafariDungeonHelper;
 import com.urkaz.morecobblemonstats.stats.cobblesafari.MCS_CobbleSafariStats;
+import com.urkaz.morecobblemonstats.stats.pokebike.MCS_PokeBikeStats;
 import com.urkaz.morecobblemonstats.stats.rustlingspots.MCS_RustlingSpotsStats;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -42,6 +43,7 @@ public class MCS_Stats {
         MCS_CobblemonUltraBeastStats.registerStats(stats);
         MCS_CobblemonResearchTasksStats.registerStats(stats);
         MCS_CobblemonSnapStats.registerStats(stats);
+        MCS_PokeBikeStats.registerStats(stats);
     }
 
     @NotNull

@@ -32,4 +32,6 @@ dependencies {
     modCompileOnly "maven.modrinth:cobblemon-research-tasks:${project.researchtasks_modrinth_fabric}"
     modCompileOnly "blank:UltraBeasts-3.1+Cobblemon-1.7.1"
     modCompileOnly "maven.modrinth:cobblemon-snap:${project.snap_modrinth_fabric}"
+    modCompileOnly "software.bernie.geckolib:geckolib-fabric-${project.minecraft_version}:${project.geckolib_version}"
+    modCompileOnly "maven.modrinth:pokebike:${project.pokebike_modrinth_fabric}"
 }

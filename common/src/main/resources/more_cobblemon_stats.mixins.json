@@ -16,13 +16,14 @@
     "cobblemonresearchtasks.CobblemonMasteryEventHandlerMixin",
     "cobblemonresearchtasks.MasteryManagerMixin",
     "cobblesafari.BalloonEntityMixin",
+    "cobblesafari.BasePCMenuMixin",
     "cobblesafari.CobbleSafariMixin",
     "cobblesafari.DungeonTpAcceptHandlerMixin",
     "cobblesafari.IncubatorBlockMixin",
     "cobblesafari.SafariEggNestBlockMixin",
     "cobblesafari.TeleporterTickHandlerMixin",
     "cobblesafari.UndergroundMinigameMixin",
-    "cobblesafari.BasePCMenuMixin",
+    "pokebike.ServerPlayerBikingMixin",
     "rustlingspots.SpotRewardResolverMixin"
   ],
   "injectors": {

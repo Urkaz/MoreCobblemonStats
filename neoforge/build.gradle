@@ -64,6 +64,8 @@ dependencies {
     modCompileOnly "curse.maven:cobblemon-marks-quests-1469388:${project.marksquests_curseforge_neoforge}"
     modCompileOnly "maven.modrinth:cobblemonraiddens:${project.raiddens_modrinth_neoforge}"
     modCompileOnly "maven.modrinth:cobblemon-snap:${project.snap_modrinth_neoforge}"
+    modCompileOnly "maven.modrinth:pokebike:${project.pokebike_modrinth_neoforge}"
+    modCompileOnly "software.bernie.geckolib:geckolib-neoforge-${project.minecraft_version}:${project.geckolib_version}"
 }
 
 processResources {
