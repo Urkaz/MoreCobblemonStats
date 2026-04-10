@@ -56,7 +56,7 @@ Also applies some fixes to some of those addons.
 
 ## New features
 
-* Adds a new command (/mcs shiny_check &lt;player>) to check that player's shiny chance.
+* New command (/mcs shiny_check &lt;player>) to check a player's shiny chance.
 
 # TODO List
 
