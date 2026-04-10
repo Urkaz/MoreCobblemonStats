@@ -7,6 +7,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.stats.Stats;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.event.RegisterCommandsEvent;
 import net.neoforged.neoforge.registries.RegisterEvent;
@@ -14,8 +15,7 @@ import net.neoforged.neoforge.registries.RegisterEvent;
 @Mod(MoreCobblemonStats.MOD_ID)
 public final class MoreCobblemonStatsNeoForge {
 
-    public MoreCobblemonStatsNeoForge(IEventBus modBus) {
-        modBus.register(this);
+    public MoreCobblemonStatsNeoForge(IEventBus eventBus, ModContainer container) {
         MoreCobblemonStats.init();
         MCS_Stats.registerStats();
     }
@@ -31,7 +31,7 @@ public final class MoreCobblemonStatsNeoForge {
     }
 
     @SubscribeEvent
-    public static void onRegisterCommands(RegisterCommandsEvent event) {
+    public void onRegisterCommands(RegisterCommandsEvent event) {
         MCS_Commands.register(event.getDispatcher());
     }
 }
