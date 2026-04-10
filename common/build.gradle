@@ -19,10 +19,13 @@ dependencies {
     modCompileOnly "net.fabricmc:fabric-loader:$project.fabric_loader_version"
     modImplementation "dev.architectury:architectury:$project.architectury_api_version"
 
+    // Conditional Mixins
     modImplementation 'com.github.Fallen-Breath.conditional-mixin:conditional-mixin-fabric:0.6.4'
 
-    // Mods needed during compile
+    // Mandatory dependencies
     modCompileOnly "com.cobblemon:mod:${project.cobblemon_version}"
+
+    // Mods that we use as dependencies, needed only during compilation
     modCompileOnly "maven.modrinth:cobbledollars:${project.cobbledollars_modrinth_fabric}"
     modCompileOnly "maven.modrinth:cobblesafari:${project.cobblesafari_modrinth_fabric}"
     modCompileOnly "maven.modrinth:cobblemon-quick-battle:${project.quickbattle_modrinth_fabric}"

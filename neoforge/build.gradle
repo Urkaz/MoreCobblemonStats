@@ -52,12 +52,14 @@ dependencies {
         exclude group: "net.neoforged.fancymodloader", module: "loader"
     }
 
+    // Conditional Mixins
     modImplementation 'com.github.Fallen-Breath.conditional-mixin:conditional-mixin-neoforge:0.6.4'
     include 'com.github.Fallen-Breath.conditional-mixin:conditional-mixin-neoforge:0.6.4'
 
+    // Mandatory dependencies
     modImplementation "com.cobblemon:neoforge:${project.cobblemon_version}"
 
-    // Mods needed during compile
+    // Mods that we use as dependencies, needed only during compilation
     modCompileOnly "maven.modrinth:cobbledollars:${project.cobbledollars_modrinth_neoforge}"
     modCompileOnly "maven.modrinth:cobblesafari:${project.cobblesafari_modrinth_neoforge}"
     modCompileOnly "maven.modrinth:cobblemon-quick-battle:${project.quickbattle_modrinth_neoforge}"
