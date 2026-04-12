@@ -87,6 +87,7 @@ Also applies some fixes to some of those addons.
 
 # TODO List
 
+- Stat: Add Num of Entries in SnapDex
 - Fix ShadowedHearts snag achievement
 - FTB Quests integration?
     - All implemented stats

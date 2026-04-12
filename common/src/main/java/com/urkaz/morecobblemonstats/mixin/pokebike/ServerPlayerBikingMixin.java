@@ -18,13 +18,13 @@ import org.spongepowered.asm.mixin.injection.At;
 public class ServerPlayerBikingMixin {
 
     @WrapOperation(method = "checkRidingStatistics", at = @At(value = "INVOKE", target = "Lnet/minecraft/server/level/ServerPlayer;getVehicle()Lnet/minecraft/world/entity/Entity;"))
-    public Entity cobblemon$checkRidingStatistics(ServerPlayer player, Operation<Entity> original, @Local(name = "i") int distance) {
+    public Entity cobblemon$checkRidingStatistics(ServerPlayer player, Operation<Entity> original, @Local(ordinal = 0) int i /*don't change to "name = i"*/) {
         var entity = original.call(player);
         Entity vehicle = player.getVehicle();
         if (!(vehicle instanceof BikeEntity)) {
             return entity;
         }
-        player.awardStat(MCS_Stats.getStat(MCS_PokeBikeStats.BIKING), distance);
+        player.awardStat(MCS_Stats.getStat(MCS_PokeBikeStats.BIKING), i);
         return entity;
     }
 

@@ -84,7 +84,7 @@ public class IncubatorBlockMixin {
                     target = "Lmaxigregrze/cobblesafari/block/incubator/IncubatorBlockEntity;reset()V"
             )
     )
-    private void mcs$hatchEggPost(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult, CallbackInfoReturnable<ItemInteractionResult> cir, @Local Pokemon pokemon) {
+    private void mcs$hatchEggPost(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult, CallbackInfoReturnable<ItemInteractionResult> cir, @Local(name = "pokemon") Pokemon pokemon) {
         ServerPlayer serverPlayer = (ServerPlayer) player;
         CobblemonEvents.HATCH_EGG_POST.post(new HatchEggEvent.Post(serverPlayer, pokemon));
     }
