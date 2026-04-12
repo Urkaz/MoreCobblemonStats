@@ -10,7 +10,7 @@
   "contributors": [
   ],
   "license": "CC0 1.0 Universal",
-  "icon": "assets/morcobblemonstats/icon.png",
+  "icon": "assets/more_cobblemon_stats/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [

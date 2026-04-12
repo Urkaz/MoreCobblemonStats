@@ -9,7 +9,7 @@ version = "${version}"
 displayName = "More Cobblemon Stats"
 authors = "Urkaz"
 description = '''More Cobblemon Player Statistics'''
-logoFile = "assets/morcobblemonstats/icon.png"
+logoFile = "assets/more_cobblemon_stats/logo.png"
 
 [[dependencies.more_cobblemon_stats]]
 modId = "neoforge"
