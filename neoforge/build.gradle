@@ -70,6 +70,8 @@ dependencies {
     modCompileOnly "maven.modrinth:pokebike:${project.pokebike_modrinth_neoforge}"
     modCompileOnly "maven.modrinth:cobblemon_expeditions:${project.expeditions_modrinth_neoforge}"
     modCompileOnly "maven.modrinth:cobblemon-shadowedhearts:${project.shadowedhearts_modrinth_neoforge}"
+    modCompileOnly "maven.modrinth:cobblemon-battle-tower:${project.battletower_modrinth_neoforge}"
+    modCompileOnly "maven.modrinth:cobblemon-wonder-trade:${project.wondertrade_modrinth_neoforge}"
     modCompileOnly "curse.maven:cobblemon-marks-quests-1469388:${project.marksquests_curseforge_neoforge}"
 }
 

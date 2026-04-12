@@ -37,6 +37,8 @@ dependencies {
     modCompileOnly "maven.modrinth:pokebike:${project.pokebike_modrinth_fabric}"
     modCompileOnly "maven.modrinth:cobblemon_expeditions:${project.expeditions_modrinth_fabric}"
     modCompileOnly "maven.modrinth:cobblemon-shadowedhearts:${project.shadowedhearts_modrinth_fabric}"
+    modCompileOnly "maven.modrinth:cobblemon-battle-tower:${project.battletower_modrinth_fabric}"
+    modCompileOnly "maven.modrinth:cobblemon-wonder-trade:${project.wondertrade_modrinth_fabric}"
     modCompileOnly "curse.maven:cobblemon-marks-quests-1469388:${project.marksquests_curseforge_fabric}"
-    modCompileOnly "blank:UltraBeasts-3.1+Cobblemon-1.7.1"
+    modCompileOnly "curse.maven:cobblemon-ultra-beasts-1333072:${project.ultrabeasts_curseforge_fabric}"
 }

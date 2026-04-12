@@ -3,11 +3,13 @@ package com.urkaz.morecobblemonstats.stats;
 import com.urkaz.morecobblemonstats.MoreCobblemonStats;
 import com.urkaz.morecobblemonstats.stats.cobbledollars.MCS_CobbledollarsStats;
 import com.urkaz.morecobblemonstats.stats.cobblemon.MCS_CobblemonStats;
+import com.urkaz.morecobblemonstats.stats.cobblemon_battle_tower.MCS_CobblemonBattleTowerStats;
 import com.urkaz.morecobblemonstats.stats.cobblemon_expeditions.MCS_CobblemonExpeditionsStats;
 import com.urkaz.morecobblemonstats.stats.cobblemon_mega_showdown.MCS_CobblemonMegaShowdownStats;
 import com.urkaz.morecobblemonstats.stats.cobblemon_quick_battle.MCS_CobblemonQuickBattleStats;
 import com.urkaz.morecobblemonstats.stats.cobblemon_snap.MCS_CobblemonSnapStats;
 import com.urkaz.morecobblemonstats.stats.cobblemon_ultrabeast.MCS_CobblemonUltraBeastStats;
+import com.urkaz.morecobblemonstats.stats.cobblemon_wonder_trade.MCS_CobblemonWonderTradeStats;
 import com.urkaz.morecobblemonstats.stats.cobblemonmarks.MCS_CobblemonMarksStats;
 import com.urkaz.morecobblemonstats.stats.cobblemonresearchtasks.MCS_CobblemonResearchTasksStats;
 import com.urkaz.morecobblemonstats.stats.cobblesafari.MCS_CobbleSafariDungeonHelper;
@@ -46,6 +48,8 @@ public class MCS_Stats {
         MCS_PokeBikeStats.registerStats(stats);
         MCS_CobblemonExpeditionsStats.registerStats(stats);
         MCS_ShadowedHeartsStats.registerStats(stats);
+        MCS_CobblemonBattleTowerStats.registerStats(stats);
+        MCS_CobblemonWonderTradeStats.registerStats(stats);
     }
 
     @NotNull

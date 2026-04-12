@@ -49,5 +49,15 @@
   "stat.shadowedhearts.shadow_pokemon_defeated": "Shadow Pokémon Defeated",
   "stat.shadowedhearts.shadow_pokemon_caught": "Shadow Pokémon Caught",
   "stat.shadowedhearts.shadow_pokemon_purified": "Shadow Pokémon Purified",
-  "stat.shadowedhearts.shadow_pokemon_snag": "Shadow Pokémon Snagged"
+  "stat.shadowedhearts.shadow_pokemon_snag": "Shadow Pokémon Snagged",
+
+  "stat.cobblemon_battle_tower.battles_won": "Battles Won",
+  "stat.cobblemon_battle_tower.battles_lost": "Battles Lost",
+  "stat.cobblemon_battle_tower.runs_forfeited": "Runs Forfeited",
+  "stat.cobblemon_battle_tower.total_floors": "Total Floors Completed",
+  "stat.cobblemon_battle_tower.bp_earned": "Total BP Earned",
+  "stat.cobblemon_battle_tower.best_win_streak": "Best Win Streak",
+  "stat.cobblemon_battle_tower.highest_floor": "Highest Floor Reached",
+
+  "stat.cobblemon_wonder_trade.wonder_trades": "Wonder Trades"
 }

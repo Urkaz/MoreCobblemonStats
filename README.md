@@ -58,6 +58,16 @@ Also applies some fixes to some of those addons.
     * Shadow Pokémon Caught
     * Shadow Pokémon Purified
     * Shadow Pokémon Snagged
+* [Cobblemon Battle Tower (1.10.19)](https://modrinth.com/mod/cobblemon-battle-tower)
+    * Battles Won
+    * Battles Lost
+    * Runs Forfeited
+    * Total Floors Completed
+    * Total BP Earned
+    * Best Win Streak
+    * Highest Floor Reached
+* [Cobblemon Wonder Trade (1.2.2)](https://modrinth.com/mod/cobblemon-wonder-trade)
+    * Wonder Trades
 
 ## Fixes/Enhancements
 
@@ -68,6 +78,8 @@ Also applies some fixes to some of those addons.
     * **[Enhancement]**: Now triggers BATTLE_FAINTED events so other mods could handle the defeat.
 * [Cobblemon: Research Tasks (2.0)](https://modrinth.com/mod/cobblemon-research-tasks) (Fabric Only)
     * **[Fix]**: Was not handling evolution through the UI with the Pokémon inside the PokéBall.
+* [Cobblemon Wonder Trade (1.2.2)](https://modrinth.com/mod/cobblemon-wonder-trade)
+    * **[Enhancement]**: Now awards Cobblemon:Traded stat.
 
 ## New features
 
@@ -75,13 +87,7 @@ Also applies some fixes to some of those addons.
 
 # TODO List
 
-## Stats
-
-- BattleTower: Beaten floors
-- BattleTower: Beaten times
-
-## Other
-
+- Fix ShadowedHearts snag achievement
 - FTB Quests integration?
     - All implemented stats
-- Cobblemon Raid Dens
+    - Cobblemon Raid Dens

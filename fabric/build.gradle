@@ -51,8 +51,10 @@ dependencies {
     modCompileOnly "maven.modrinth:pokebike:${project.pokebike_modrinth_fabric}"
     modCompileOnly "maven.modrinth:cobblemon_expeditions:${project.expeditions_modrinth_fabric}"
     modCompileOnly "maven.modrinth:cobblemon-shadowedhearts:${project.shadowedhearts_modrinth_fabric}"
+    modCompileOnly "maven.modrinth:cobblemon-battle-tower:${project.battletower_modrinth_fabric}"
+    modCompileOnly "maven.modrinth:cobblemon-wonder-trade:${project.wondertrade_modrinth_fabric}"
     modCompileOnly "curse.maven:cobblemon-marks-quests-1469388:${project.marksquests_curseforge_fabric}"
-    modCompileOnly "blank:UltraBeasts-3.1+Cobblemon-1.7.1"
+    modCompileOnly "curse.maven:cobblemon-ultra-beasts-1333072:${project.ultrabeasts_curseforge_fabric}"
 
     // The same mods above, but in runtime for testing them
     modLocalRuntime "maven.modrinth:cobbledollars:${project.cobbledollars_modrinth_fabric}"
@@ -60,14 +62,16 @@ dependencies {
     modLocalRuntime "maven.modrinth:cobblemon-quick-battle:${project.quickbattle_modrinth_fabric}"
     modLocalRuntime "maven.modrinth:cobblemon-mega-showdown:${project.megashowdown_modrinth_fabric}"
     modLocalRuntime "maven.modrinth:cobblemon-rustling-spots:${project.rustlingspots_modrinth_fabric}"
-    modLocalRuntime "curse.maven:cobblemon-marks-quests-1469388:${project.marksquests_curseforge_fabric}"
     modLocalRuntime "maven.modrinth:cobblemonraiddens:${project.raiddens_modrinth_fabric}"
     modLocalRuntime "maven.modrinth:cobblemon-research-tasks:${project.researchtasks_modrinth_fabric}"
-    modLocalRuntime "blank:UltraBeasts-3.1+Cobblemon-1.7.1"
     modLocalRuntime "maven.modrinth:cobblemon-snap:${project.snap_modrinth_fabric}"
     modLocalRuntime "maven.modrinth:pokebike:${project.pokebike_modrinth_fabric}"
     modLocalRuntime "maven.modrinth:cobblemon_expeditions:${project.expeditions_modrinth_fabric}"
     modLocalRuntime "maven.modrinth:cobblemon-shadowedhearts:${project.shadowedhearts_modrinth_fabric}"
+    modLocalRuntime "maven.modrinth:cobblemon-battle-tower:${project.battletower_modrinth_fabric}"
+    modLocalRuntime "maven.modrinth:cobblemon-wonder-trade:${project.wondertrade_modrinth_fabric}"
+    modLocalRuntime "curse.maven:cobblemon-marks-quests-1469388:${project.marksquests_curseforge_fabric}"
+    modLocalRuntime "curse.maven:cobblemon-ultra-beasts-1333072:${project.ultrabeasts_curseforge_fabric}"
 
     // Random runtime only mods and dependencies from the ones above
     modLocalRuntime "com.terraformersmc:modmenu:${project.modmenu_version}"
@@ -75,6 +79,7 @@ dependencies {
     modLocalRuntime "maven.modrinth:rctmod:${project.rct_version}"
     modLocalRuntime "maven.modrinth:rctapi:${project.rctapi_version}"
 
+    modLocalRuntime "maven.modrinth:wild-battle-api:${project.wildbattleapi_modrinth_fabric}"
     modLocalRuntime "io.wispforest:accessories-fabric:${project.accessories_version}"
     modLocalRuntime "io.wispforest:owo-lib:${project.owo_version}"
     modLocalRuntime "software.bernie.geckolib:geckolib-fabric-${project.minecraft_version}:${project.geckolib_version}"
