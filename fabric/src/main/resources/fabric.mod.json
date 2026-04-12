@@ -32,7 +32,17 @@
     "cobbledollars": ">=2.0.0",
     "cobblesafari": ">=0.1.5",
     "cobblemon_quick_battle": ">=1.3.8",
-    "cobblemon_mega_showdown": ">=1.7.4"
+    "cobblemon_mega_showdown": ">=1.7.4",
+    "cobblemon_battle_tower": ">=1.10.19",
+    "cobblemon_expeditions": ">=1.1.2",
+    "cobblemon_snap": ">=1.1.2",
+    "cobblemon_ultrabeast": ">=3.1",
+    "cobblemon_wonder_trade": ">=1.2.2",
+    "cobblemonmarks": ">=1.0.2",
+    "cobblemonresearchtasks": ">=2.0",
+    "pokebike": ">=1.8",
+    "rustlingspots": ">=2.0.1",
+    "shadowedhearts": ">=1.0.6"
   },
   "custom": {
     "modmenu": {

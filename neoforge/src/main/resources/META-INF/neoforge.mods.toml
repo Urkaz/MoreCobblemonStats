@@ -67,6 +67,62 @@ versionRange = "[1.7.4, )"
 ordering = "AFTER"
 side = "BOTH"
 
+[[dependencies.more_cobblemon_stats]]
+modId = "cobblemon_battle_tower"
+type = "optional"
+versionRange = "[1.10.19, )"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.more_cobblemon_stats]]
+modId = "cobblemon_expeditions"
+type = "optional"
+versionRange = "[1.1.2, )"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.more_cobblemon_stats]]
+modId = "cobblemon_snap"
+type = "optional"
+versionRange = "[1.1.2, )"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.more_cobblemon_stats]]
+modId = "cobblemon_wonder_trade"
+type = "optional"
+versionRange = "[1.2.2, )"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.more_cobblemon_stats]]
+modId = "cobblemonmarks"
+type = "optional"
+versionRange = "[1.0.2, )"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.more_cobblemon_stats]]
+modId = "pokebike"
+type = "optional"
+versionRange = "[1.8, )"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.more_cobblemon_stats]]
+modId = "rustlingspots"
+type = "optional"
+versionRange = "[2.0.1, )"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.more_cobblemon_stats]]
+modId = "shadowedhearts"
+type = "optional"
+versionRange = "[1.0.6, )"
+ordering = "AFTER"
+side = "BOTH"
+
 [[mixins]]
 config = "more_cobblemon_stats.mixins.json"
 
