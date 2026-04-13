@@ -134,7 +134,7 @@ subprojects {
 		// CurseForge options used by both Fabric and Forge
 		def cfOptions = curseforgeOptions {
 			accessToken = providers.environmentVariable("CURSEFORGE_TOKEN")
-			projectId = "123456"
+			projectId = "1512630"
 			minecraftVersions.add(project.minecraft_version)
 
 			clientRequired = true
