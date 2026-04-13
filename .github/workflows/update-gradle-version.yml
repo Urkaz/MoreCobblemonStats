@@ -1,0 +1,35 @@
+name: (Release) Update Gradle Version
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 'release-please--branches--*'
+
+permissions:
+  contents: write
+
+env:
+  CI: true
+
+jobs:
+  update-gradle-version:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Read new version & update gradle-version.properties
+        id: read_version
+        run: |
+          VERSION=$(jq -r '.["."]' < .release-please-manifest.json)
+          sed -i "s/mod_version=.*/mod_version=$VERSION/" gradle-version.properties
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: "chore(ci): update gradle-version.properties version"
+          branch: ${{ github.ref_name }}

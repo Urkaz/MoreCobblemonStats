@@ -2,8 +2,13 @@ plugins {
 	id 'dev.architectury.loom' version '1.13-SNAPSHOT' apply false
 	id 'architectury-plugin' version '3.4-SNAPSHOT'
 	id 'com.github.johnrengelman.shadow' version '8.1.1' apply false
+	id "me.modmuss50.mod-publish-plugin" version "1.1.0" apply false
 	id 'org.jetbrains.kotlin.jvm' version '2.2.0'
 }
+
+def versionPropsFile = file('gradle-version.properties')
+def versionProps = new Properties()
+versionProps.load(new FileInputStream(versionPropsFile))
 
 architectury {
 	minecraft = project.minecraft_version
@@ -11,7 +16,7 @@ architectury {
 
 allprojects {
 	group = rootProject.maven_group
-	version = rootProject.mod_version
+//	version = versionProps['mod_version']
 }
 
 subprojects {
@@ -19,6 +24,15 @@ subprojects {
 	apply plugin: 'architectury-plugin'
 	apply plugin: 'maven-publish'
 	apply plugin: 'org.jetbrains.kotlin.jvm'
+	apply plugin: "me.modmuss50.mod-publish-plugin"
+
+	def isCiBuild = System.getenv("CI") == "true"
+	def isLocalBuild = !isCiBuild
+
+	version = isLocalBuild ?
+			getNextSnapshotVersion(versionProps['mod_version'] as String, project.minecraft_version) :
+			getThisVersion(versionProps['mod_version'] as String, project.minecraft_version)
+	println "Building version: $version"
 
 	base {
 		archivesName = "$rootProject.archives_name-$project.name"
@@ -90,4 +104,128 @@ subprojects {
 	tasks.withType(JavaCompile).configureEach {
 		it.options.release = 21
 	}
+
+	publishing {
+		publications {
+			maven(MavenPublication) {
+				artifactId base.archivesName.get()
+				from components.java
+			}
+		}
+		repositories {
+			if (System.getenv("urkaz_maven_pass") != null) {
+				maven {
+					name "${archives_name}"
+					url "https://maven.franserver.mywire.org/releases"
+					credentials {
+						username = "autodeploy"
+						password = System.getenv("urkaz_maven_pass")
+					}
+				}
+			}
+		}
+	}
+
+	publishMods {
+		changelog = providers.fileContents(layout.projectDirectory.file("CHANGELOG.md")).asText
+		type = STABLE
+		displayName = "${rootProject.display_name} ${version}"
+
+		// CurseForge options used by both Fabric and Forge
+		def cfOptions = curseforgeOptions {
+			accessToken = providers.environmentVariable("CURSEFORGE_TOKEN")
+			projectId = "123456"
+			minecraftVersions.add(project.minecraft_version)
+
+			clientRequired = true
+			serverRequired = true
+
+			requires("architectury-api")
+			requires("cobblemon")
+			optional("cobbledollars")
+			optional("cobblemon-quick-battle")
+			optional("cobblemon-mega-showdown")
+			optional("cobblemon-snap")
+			optional("pokebike")
+			optional("cobblemon-battle-tower")
+			optional("cobblemon-wonder-trade")
+
+			optional("rustling-spots")
+			optional("cobblemon-marks-quests")
+			optional("cobblemon-expeditions")
+			optional("cobblemon-shadowed-hearts")
+		}
+
+		// Modrinth options used by both Fabric and Forge
+		def mrOptions = modrinthOptions {
+			projectDescription = providers.fileContents(layout.projectDirectory.file("README.md")).asText
+			accessToken = providers.environmentVariable("MODRINTH_TOKEN")
+			projectId = "67ZupZ7K"
+			minecraftVersions.add(project.minecraft_version)
+
+			requires("architectury-api")
+			requires("cobblemon")
+			optional("cobbledollars")
+			optional("cobblemon-quick-battle")
+			optional("cobblemon-mega-showdown")
+			optional("cobblemon-snap")
+			optional("pokebike")
+			optional("cobblemon-battle-tower")
+			optional("cobblemon-wonder-trade")
+
+			optional("cobblesafari")
+			optional("cobblemon-rustling-spots")
+			optional("cobblemon_expeditions")
+			optional("cobblemon-shadowedhearts")
+		}
+
+		// Fabric specific options for CurseForge
+		curseforge("curseforgeFabric") {
+			from cfOptions
+			file project(":fabric")
+			modLoaders.add("fabric")
+			requires {
+				slug = "fabric-api"
+			}
+
+			optional("cobblemon-research-tasks")
+			optional("cobblemon-ultra-beasts")
+		}
+
+		// Forge specific options for CurseForge
+		curseforge("curseforgeNeoForge") {
+			from cfOptions
+			file project(":neoforge")
+			modLoaders.add("neoforge")
+		}
+
+		// Fabric specific options for Modrinth
+		modrinth("modrinthFabric") {
+			from mrOptions
+			file project(":fabric")
+			modLoaders.add("fabric")
+			requires {
+				slug = "fabric-api"
+			}
+
+			optional("cobblemon-research-tasks")
+		}
+
+		// NeoForge specific options for Modrinth
+		modrinth("modrinthNeoForge") {
+			from mrOptions
+			file project(":neoforge")
+			modLoaders.add("neoforge")
+		}
+	}
+}
+
+static def getNextSnapshotVersion(String version, String minecraft_version) {
+	def parts = version.tokenize('.').collect { it.toInteger() }
+	parts[2] += 1 // Increment PATCH
+	return "${parts.join('.')}-mc${minecraft_version}-SNAPSHOT"
+}
+
+static def getThisVersion(String version, String minecraft_version) {
+	return "${version}-mc${minecraft_version}"
 }

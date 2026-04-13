@@ -1,0 +1,40 @@
+name: Publish
+
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [closed]
+
+env:
+  CI: true
+
+jobs:
+  publish:
+    if: ${{ github.event.pull_request.merged == true && startsWith(github.event.pull_request.title, 'chore') && contains(github.event.pull_request.title, 'release') }}
+    name: Publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Set up JDK
+        uses: actions/setup-java@v5
+        with:
+          distribution: 'oracle'
+          java-version: 21
+
+      - name: Set Gradle Wrapper Permissions
+        run: chmod +x ./gradlew
+
+      - name: Maven Publish
+        run: ./gradlew publish --stacktrace
+        env:
+          urkaz_maven_pass: ${{ secrets.URKAZ_MAVEN_PASS }}
+
+      - name: Curseforge & Modrinth Publish
+        run: ./gradlew publishMods --stacktrace
+        env:
+          cuseforge_api_key: ${{ secrets.CURSEFORGE_API_KEY }}
+          modrinth_api_key: ${{ secrets.MODRINTH_API_KEY }}
