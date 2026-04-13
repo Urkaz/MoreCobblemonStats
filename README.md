@@ -94,14 +94,14 @@ The mod also adds a few fixes and ehnacements to other Cobblemon addons to impro
 <summary>Enhancements</summary>
 
 * [CobbleSafari (0.2.0)](https://modrinth.com/mod/cobblesafari)
-    * Incubators now count for "Pokémon Eggs Hatched".
-    * Wild Eggs now count for "Pokémon Eggs Collected"
+    * Incubators count for "Pokémon Eggs Hatched".
+    * Wild Eggs count for "Pokémon Eggs Collected"
 * [Cobblemon Quick Battle (1.3.8)](https://modrinth.com/mod/cobblemon-quick-battle)
-    * Now triggers BATTLE_FAINTED events so other mods could handle the defeat.
+    * Triggers BATTLE_FAINTED events so other mods could handle the defeat.
 * [Cobblemon: Research Tasks (2.0)](https://modrinth.com/mod/cobblemon-research-tasks) (Fabric Only)
-    * Now correctly handles evolution through UI with the Pokémon inside the PokéBall.
+    * Correctly handles evolution through UI with the Pokémon inside the PokéBall.
 * [Cobblemon Wonder Trade (1.2.2)](https://modrinth.com/mod/cobblemon-wonder-trade)
-    * Now awards cobblemon:traded stat.
+    * Awards cobblemon:traded stat.
 * [Cobblemon: Shadowed Hearts (1.0.6)](https://modrinth.com/mod/cobblemon-shadowedhearts)
     * Added an extra check to only trigger Snag if it's a Trainer Pokémon.
 
