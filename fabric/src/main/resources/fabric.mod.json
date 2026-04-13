@@ -22,11 +22,11 @@
     "more_cobblemon_stats.fabric.mixins.json"
   ],
   "depends": {
-    "minecraft": "~1.21.1",
+    "minecraft": "1.21.1",
     "java": ">=21",
     "fabric-api": "*",
     "architectury": ">=13.0.8",
-    "cobblemon": ">=1.7.0"
+    "cobblemon": ">=1.7.3"
   },
   "suggests": {
     "cobbledollars": ">=2.0.0",
