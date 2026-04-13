@@ -81,16 +81,6 @@ Also applies some fixes to some of those addons.
 * [Cobblemon: Research Tasks (2.0)](https://modrinth.com/mod/cobblemon-research-tasks) (Fabric Only)
     * Now correctly handles evolution through UI with the Pokémon inside the PokéBall.
 * [Cobblemon Wonder Trade (1.2.2)](https://modrinth.com/mod/cobblemon-wonder-trade)
-    * Now awards Cobblemon:Traded stat.
-
-## New features
-
-* New command (/mcs shiny_check &lt;player>) to check a player's shiny chance.
-
-# TODO List
-
-- Stat: Add Num of Entries in SnapDex
-- Fix ShadowedHearts snag achievement
-- FTB Quests integration?
-    - All implemented stats
-    - Cobblemon Raid Dens
+    * Now awards cobblemon:traded stat.
+* [Cobblemon: Shadowed Hearts (1.0.6)](https://modrinth.com/mod/cobblemon-shadowedhearts)
+    * Added an extra check to only trigger Snag if it's a Trainer Pokémon.

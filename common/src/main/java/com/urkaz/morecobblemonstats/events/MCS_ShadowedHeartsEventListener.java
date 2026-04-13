@@ -24,7 +24,7 @@ public class MCS_ShadowedHeartsEventListener {
 
             if (PokemonAspectUtil.hasShadowAspect(pokemon)) {
 
-                // Try to get the current battle to identify if the captured is a Trainer Pokémon
+                // Try to get the current battle to identify if the captured Pokémon is from a Trainer
                 boolean vsNPC = false;
                 try {
                     PokemonBattle battle = BattleRegistry.getBattleByParticipatingPlayer(player);

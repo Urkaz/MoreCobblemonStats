@@ -31,7 +31,8 @@
     "minecraft.ServerPlayerMixin",
     "pokebike.ServerPlayerBikingMixin",
     "rustlingspots.SpotRewardResolverMixin",
-    "shadowedhearts.ModCriteriaTriggersMixin"
+    "shadowedhearts.ModCriteriaTriggersMixin",
+    "shadowedhearts.SnagEventsMixin"
   ],
   "injectors": {
     "defaultRequire": 1
