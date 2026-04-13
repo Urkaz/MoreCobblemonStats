@@ -1,11 +1,11 @@
 ![logo](https://raw.githubusercontent.com/Urkaz/MoreCobblemonStats/refs/heads/main/external_resources/more_cobblemon_stats.png)
 
-# More Cobblemon Stats
-
-Adds more Stats to Cobblemon and some of its most common addons.
-Also applies some fixes to some of those addons.
-
 ## New Stats
+
+7 new Statistics for base Cobblemon, and more than 40 for the most used and best Cobblemon addons.
+
+<details>
+<summary>Stats List</summary>
 
 * [Cobblemon (1.7.3+1.21.1)](https://modrinth.com/mod/cobblemon)
     * Poké Balls Thrown
@@ -71,7 +71,27 @@ Also applies some fixes to some of those addons.
 * [Cobblemon Wonder Trade (1.2.2)](https://modrinth.com/mod/cobblemon-wonder-trade)
     * Wonder Trades
 
+</details>
+
+## FTB Quests
+
+You can use any of the new stats natively with FTB Quests! No special quest nodes or extra mods.
+
+<details>
+<summary>Spoiler</summary>
+
+FTB Quests native integration with "Stat" quest type:
+
+![FTB Quests native integration with "Stat" quest type.](https://cdn.modrinth.com/data/67ZupZ7K/images/e8fca5b2576723a17e01e6b2b9bc38e51f5102af.png)
+
+</details>
+
 ## Compatibility Enhancements
+
+The mod also adds a few fixes and ehnacements to other Cobblemon addons to improve the compatibility between them.
+
+<details>
+<summary>Enhancements</summary>
 
 * [CobbleSafari (0.2.0)](https://modrinth.com/mod/cobblesafari)
     * Incubators now count for "Pokémon Eggs Hatched".
@@ -84,3 +104,5 @@ Also applies some fixes to some of those addons.
     * Now awards cobblemon:traded stat.
 * [Cobblemon: Shadowed Hearts (1.0.6)](https://modrinth.com/mod/cobblemon-shadowedhearts)
     * Added an extra check to only trigger Snag if it's a Trainer Pokémon.
+
+</details>
