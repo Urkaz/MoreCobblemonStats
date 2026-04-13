@@ -1,3 +1,5 @@
+![logo](https://raw.githubusercontent.com/Urkaz/MoreCobblemonStats/refs/heads/main/external_resources/more_cobblemon_stats.png)
+
 # More Cobblemon Stats
 
 Adds more Stats to Cobblemon and some of its most common addons.
@@ -69,17 +71,17 @@ Also applies some fixes to some of those addons.
 * [Cobblemon Wonder Trade (1.2.2)](https://modrinth.com/mod/cobblemon-wonder-trade)
     * Wonder Trades
 
-## Fixes/Enhancements
+## Compatibility Enhancements
 
 * [CobbleSafari (0.2.0)](https://modrinth.com/mod/cobblesafari)
-    * **[Enhancement]**: Incubators now count for "Pokémon Eggs Hatched".
-    * **[Enhancement]**: Wild Eggs now count for "Pokémon Eggs Collected"
+    * Incubators now count for "Pokémon Eggs Hatched".
+    * Wild Eggs now count for "Pokémon Eggs Collected"
 * [Cobblemon Quick Battle (1.3.8)](https://modrinth.com/mod/cobblemon-quick-battle)
-    * **[Enhancement]**: Now triggers BATTLE_FAINTED events so other mods could handle the defeat.
+    * Now triggers BATTLE_FAINTED events so other mods could handle the defeat.
 * [Cobblemon: Research Tasks (2.0)](https://modrinth.com/mod/cobblemon-research-tasks) (Fabric Only)
-    * **[Fix]**: Was not handling evolution through the UI with the Pokémon inside the PokéBall.
+    * Now correctly handles evolution through UI with the Pokémon inside the PokéBall.
 * [Cobblemon Wonder Trade (1.2.2)](https://modrinth.com/mod/cobblemon-wonder-trade)
-    * **[Enhancement]**: Now awards Cobblemon:Traded stat.
+    * Now awards Cobblemon:Traded stat.
 
 ## New features
 
