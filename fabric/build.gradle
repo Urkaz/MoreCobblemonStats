@@ -86,7 +86,7 @@ dependencies {
     modLocalRuntime "me.shedaniel.cloth:cloth-config-fabric:${project.clothconfig_fabric}"
     modLocalRuntime "fuzs.forgeconfigapiport:forgeconfigapiport-fabric:${project.forgeconfigapi_version}"
     modLocalRuntime "dev.felnull:special-model-loader:${project.specialmodelloader_version}"
-    modLocalRuntime ("org.xerial:sqlite-jdbc:3.46.0.0") {
+    modLocalRuntime("org.xerial:sqlite-jdbc:3.46.0.0") {
         exclude group: 'org.slf4j'
     }
 }
