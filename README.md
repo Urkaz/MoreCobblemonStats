@@ -104,5 +104,8 @@ The mod also adds a few fixes and ehnacements to other Cobblemon addons to impro
     * Awards cobblemon:traded stat.
 * [Cobblemon: Shadowed Hearts (1.0.6)](https://modrinth.com/mod/cobblemon-shadowedhearts)
     * Added an extra check to only trigger Snag if it's a Trainer Pokémon.
+* [Cobblemon Snap (1.1.2)](https://modrinth.com/mod/cobblemon-snap)
+    * Fixes incorrect shiny odd calculation for Research Bonuses.
+    * Records Pokémon captured in photos as "Seen" in the base Cobblemon Pokédex.
 
 </details>

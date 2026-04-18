@@ -32,7 +32,7 @@ public class MCS_Commands {
                                                             return Unit.INSTANCE;
                                                         });
                                                         float shinyChance = newShinyChance.get();
-                                                        return Component.literal(String.format("Shiny change for %s: 1/%.0f (%.5f)", target.getName().getString(), shinyChance, 1 / shinyChance));
+                                                        return Component.literal(String.format("Shiny chance for %s: 1/%.0f (%.5f)", target.getName().getString(), shinyChance, 1 / shinyChance));
                                                     },
                                                     false
                                             );

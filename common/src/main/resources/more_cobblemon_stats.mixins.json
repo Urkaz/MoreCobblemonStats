@@ -15,6 +15,7 @@
     "cobblemon_expeditions.StartExpeditionHandlerMixin",
     "cobblemon_quick_battle.QuickBattleInitiatePacketMixin",
     "cobblemon_snap.CameraItemMixin",
+    "cobblemon_snap.ResearchBonusHandlerMixin",
     "cobblemon_ultrabeast.WormholeEntityMixin",
     "cobblemon_wonder_trade.ModNetworkingMixin",
     "cobblemonmarks.MarksHandlerMixin",
