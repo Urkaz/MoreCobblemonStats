@@ -21,7 +21,7 @@ public class BattleTowerManagerMixin {
     @Inject(method = "onBattleWin",
             at = @At(value = "INVOKE", target = "Lbattle/tower/data/TowerDataManager;savePlayerData(Ljava/util/UUID;)V"))
     private static void mcs$onBattleWin(ServerPlayer player, CallbackInfo ci, @Local(name = "data") PlayerTowerData data) {
-       player.awardStat(MCS_Stats.getStat(MCS_CobblemonBattleTowerStats.BATTLES_WON));
+        player.awardStat(MCS_Stats.getStat(MCS_CobblemonBattleTowerStats.BATTLES_WON));
 
         ((ServerPlayerExtensions) player).mcs$setHighStat(MCS_Stats.getStat(MCS_CobblemonBattleTowerStats.BEST_WIN_STREAK), data.getCurrentStreak());
         ((ServerPlayerExtensions) player).mcs$setHighStat(MCS_Stats.getStat(MCS_CobblemonBattleTowerStats.HIGHEST_FLOOR), data.getCurrentFloor());
@@ -43,7 +43,7 @@ public class BattleTowerManagerMixin {
     @Inject(method = "forfeitRun",
             at = @At(value = "INVOKE", target = "Lbattle/tower/data/TowerDataManager;savePlayerData(Ljava/util/UUID;)V", ordinal = 1))
     private static void mcs$forfeitRun(ServerPlayer player, CallbackInfo ci, @Local(name = "data") PlayerTowerData data, @Local(name = "earnedBP") int earnedBP) {
-       player.awardStat(MCS_Stats.getStat(MCS_CobblemonBattleTowerStats.RUNS_FORFEITED));
+        player.awardStat(MCS_Stats.getStat(MCS_CobblemonBattleTowerStats.RUNS_FORFEITED));
         player.awardStat(MCS_Stats.getStat(MCS_CobblemonBattleTowerStats.BP_EARNED), earnedBP);
 
         ((ServerPlayerExtensions) player).mcs$setHighStat(MCS_Stats.getStat(MCS_CobblemonBattleTowerStats.BEST_WIN_STREAK), data.getBestStreak());
