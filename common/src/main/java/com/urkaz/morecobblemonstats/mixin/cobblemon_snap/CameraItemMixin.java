@@ -5,6 +5,7 @@ import cobblemon.snap.data.PhotoData;
 import cobblemon.snap.data.PlayerSnapData;
 import cobblemon.snap.item.CameraItem;
 import cobblemon.snap.item.CapturedPokemonData;
+import com.cobblemon.mod.common.Cobblemon;
 import com.llamalad7.mixinextras.sugar.Local;
 import com.urkaz.morecobblemonstats.stats.MCS_Stats;
 import com.urkaz.morecobblemonstats.stats.cobblemon_snap.MCS_CobblemonSnapStats;
@@ -42,6 +43,10 @@ public class CameraItemMixin {
     )
     private static void mcs$captured(ServerPlayer player, float zoomLevel, CallbackInfo ci, @Local(name = "captures") List<CapturedPokemonData> captures) {
         player.awardStat(MCS_Stats.getStat(MCS_CobblemonSnapStats.TOTAL_POKEMON_CAPTURED), captures.size());
+
+        captures.forEach(capturedPokemonData -> {
+            Cobblemon.playerDataManager.getPokedexData(player.getUUID()).encounter(capturedPokemonData.entity().getPokemon());
+        });
     }
 
     @Inject(
