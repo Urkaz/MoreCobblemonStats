@@ -182,7 +182,7 @@ subprojects {
 		// Fabric specific options for CurseForge
 		curseforge("curseforgeFabric") {
 			from cfOptions
-			file project(":fabric")
+			file project(":fabric").tasks.remapJar.archiveFile
 			modLoaders.add("fabric")
 			requires {
 				slug = "fabric-api"
@@ -195,14 +195,14 @@ subprojects {
 		// Forge specific options for CurseForge
 		curseforge("curseforgeNeoForge") {
 			from cfOptions
-			file project(":neoforge")
+			file project(":neoforge").tasks.remapJar.archiveFile
 			modLoaders.add("neoforge")
 		}
 
 		// Fabric specific options for Modrinth
 		modrinth("modrinthFabric") {
 			from mrOptions
-			file project(":fabric")
+			file project(":fabric").tasks.remapJar.archiveFile
 			modLoaders.add("fabric")
 			requires {
 				slug = "fabric-api"
@@ -214,7 +214,7 @@ subprojects {
 		// NeoForge specific options for Modrinth
 		modrinth("modrinthNeoForge") {
 			from mrOptions
-			file project(":neoforge")
+			file project(":neoforge").tasks.remapJar.archiveFile
 			modLoaders.add("neoforge")
 		}
 	}
