@@ -2,7 +2,7 @@
 
 ## New Stats
 
-7 new Statistics for base Cobblemon, and more than 40 for the most used and best Cobblemon addons.
+8 new Statistics for base Cobblemon, and more than 40 for the most used and best Cobblemon addons.
 
 <details>
 <summary>Stats List</summary>
