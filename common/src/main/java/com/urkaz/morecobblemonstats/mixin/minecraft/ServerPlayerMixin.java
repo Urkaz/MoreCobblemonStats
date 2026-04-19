@@ -47,7 +47,7 @@ public abstract class ServerPlayerMixin implements ServerPlayerExtensions {
     @Unique
     public void mcs$setHighStat(ResourceLocation stat, int value) {
         Stat<ResourceLocation> s = Stats.CUSTOM.get(stat);
-        if(mcs$getStat(s) < value) {
+        if (mcs$getStat(s) < value) {
             resetStat(s);
             awardStat(s, value);
         }

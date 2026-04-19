@@ -5,8 +5,8 @@ import com.cobblemon.mod.common.battles.pokemon.BattlePokemon;
 import com.github.yajatkaul.mega_showdown.api.event.DynamaxStartCallback;
 import com.github.yajatkaul.mega_showdown.api.event.UltraBurstCallback;
 import com.urkaz.morecobblemonstats.MCS_Platform;
-import com.urkaz.morecobblemonstats.stats.MCS_Stats;
 import com.urkaz.morecobblemonstats.MoreCobblemonStats;
+import com.urkaz.morecobblemonstats.stats.MCS_Stats;
 import com.urkaz.morecobblemonstats.stats.cobblemon_mega_showdown.MCS_CobblemonMegaShowdownStats;
 import net.minecraft.server.level.ServerPlayer;
 

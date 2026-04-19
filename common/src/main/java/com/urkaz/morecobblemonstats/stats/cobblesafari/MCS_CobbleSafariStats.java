@@ -2,7 +2,6 @@ package com.urkaz.morecobblemonstats.stats.cobblesafari;
 
 import com.urkaz.morecobblemonstats.MCS_Platform;
 import com.urkaz.morecobblemonstats.stats.MCS_Stats;
-import net.minecraft.stats.StatFormatter;
 
 import java.util.Map;
 

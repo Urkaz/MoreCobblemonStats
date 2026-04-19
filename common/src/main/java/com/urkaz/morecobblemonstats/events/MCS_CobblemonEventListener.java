@@ -5,8 +5,8 @@ import com.cobblemon.mod.common.api.events.CobblemonEvents;
 import com.cobblemon.mod.common.battles.ActiveBattlePokemon;
 import com.cobblemon.mod.common.battles.BattleSide;
 import com.cobblemon.mod.common.battles.actor.PlayerBattleActor;
-import com.urkaz.morecobblemonstats.stats.MCS_Stats;
 import com.urkaz.morecobblemonstats.MoreCobblemonStats;
+import com.urkaz.morecobblemonstats.stats.MCS_Stats;
 import com.urkaz.morecobblemonstats.stats.cobblemon.MCS_CobblemonStats;
 import net.minecraft.server.level.ServerPlayer;
 

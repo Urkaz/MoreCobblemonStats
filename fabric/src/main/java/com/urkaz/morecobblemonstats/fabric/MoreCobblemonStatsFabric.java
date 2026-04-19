@@ -1,8 +1,8 @@
 package com.urkaz.morecobblemonstats.fabric;
 
-import com.urkaz.morecobblemonstats.stats.MCS_Stats;
 import com.urkaz.morecobblemonstats.MoreCobblemonStats;
 import com.urkaz.morecobblemonstats.commands.MCS_Commands;
+import com.urkaz.morecobblemonstats.stats.MCS_Stats;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.minecraft.core.Registry;

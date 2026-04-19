@@ -2,7 +2,6 @@ package com.urkaz.morecobblemonstats.mixin.cobblemonmarks;
 
 import com.cobblemon.mod.common.pokemon.Pokemon;
 import com.urkaz.morecobblemonstats.stats.MCS_Stats;
-import com.urkaz.morecobblemonstats.stats.cobblemon_quick_battle.MCS_CobblemonQuickBattleStats;
 import com.urkaz.morecobblemonstats.stats.cobblemonmarks.MCS_CobblemonMarksStats;
 import dev.darcosse.common.cobblemonmarks.config.MarksCondition;
 import dev.darcosse.common.cobblemonmarks.handler.MarksHandler;

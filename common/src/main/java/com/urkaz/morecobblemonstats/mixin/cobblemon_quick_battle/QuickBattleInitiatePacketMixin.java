@@ -8,7 +8,6 @@ import com.cobblemon.mod.common.api.events.battles.BattleFaintedEvent;
 import com.cobblemon.mod.common.api.moves.Move;
 import com.cobblemon.mod.common.battles.BattleBuilder;
 import com.cobblemon.mod.common.battles.BattleRegistry;
-import com.cobblemon.mod.common.battles.BattleStartResult;
 import com.cobblemon.mod.common.battles.pokemon.BattlePokemon;
 import com.cobblemon.mod.common.entity.pokemon.PokemonEntity;
 import com.cobblemon.mod.common.pokemon.Pokemon;
@@ -56,8 +55,7 @@ public class QuickBattleInitiatePacketMixin {
                 battle.end();
 
                 CobblemonEvents.BATTLE_FAINTED.post(new BattleFaintedEvent(battle, faintedBattlePokemon, battleContext, "p2a"));
-            }
-            catch (Throwable ignored) {
+            } catch (Throwable ignored) {
             }
         } else {
             player.awardStat(MCS_Stats.getStat(MCS_CobblemonQuickBattleStats.QUICK_BATTLE_LOST));

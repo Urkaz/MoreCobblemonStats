@@ -3,7 +3,6 @@ package com.urkaz.morecobblemonstats.mixin.cobblemonresearchtasks;
 import com.cobblemon.mod.common.pokemon.Pokemon;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
-import com.urkaz.morecobblemonstats.stats.MCS_Stats;
 import com.urkaz.morecobblemonstats.stats.cobblemonresearchtasks.MCS_CobblemonResearchTasksStats;
 import github.jorgaomc.events.CobblemonMasteryEventHandler;
 import me.fallenbreath.conditionalmixin.api.annotation.Condition;
@@ -25,7 +24,7 @@ public class CobblemonMasteryEventHandlerMixin {
     )
     private static ServerPlayer mcs$maybeNotifyCompleted(Pokemon p, Operation<ServerPlayer> original) {
         ServerPlayer sp = original.call(p);
-        if(sp == null) sp = p.getOwnerPlayer();
+        if (sp == null) sp = p.getOwnerPlayer();
         return sp;
     }
 }

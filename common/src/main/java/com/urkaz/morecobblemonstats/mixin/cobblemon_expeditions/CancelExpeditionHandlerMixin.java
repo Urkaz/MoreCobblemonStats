@@ -2,8 +2,6 @@ package com.urkaz.morecobblemonstats.mixin.cobblemon_expeditions;
 
 import com.cobblemonexpeditions.network.c2s.CancelExpeditionHandler;
 import com.cobblemonexpeditions.network.c2s.CancelExpeditionPayload;
-import com.cobblemonexpeditions.network.c2s.StartExpeditionHandler;
-import com.cobblemonexpeditions.network.c2s.StartExpeditionPayload;
 import com.urkaz.morecobblemonstats.stats.MCS_Stats;
 import com.urkaz.morecobblemonstats.stats.cobblemon_expeditions.MCS_CobblemonExpeditionsStats;
 import me.fallenbreath.conditionalmixin.api.annotation.Condition;

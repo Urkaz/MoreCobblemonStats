@@ -3,8 +3,6 @@ package com.urkaz.morecobblemonstats.mixin.cobblemon_expeditions;
 import com.cobblemonexpeditions.expedition.ExpeditionOutcome;
 import com.cobblemonexpeditions.network.c2s.ClaimRewardHandler;
 import com.cobblemonexpeditions.network.c2s.ClaimRewardPayload;
-import com.cobblemonexpeditions.network.c2s.StartExpeditionHandler;
-import com.cobblemonexpeditions.network.c2s.StartExpeditionPayload;
 import com.cobblemonexpeditions.player.RewardBundle;
 import com.llamalad7.mixinextras.sugar.Local;
 import com.urkaz.morecobblemonstats.stats.MCS_Stats;

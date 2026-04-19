@@ -6,10 +6,8 @@
   "stat.cobblemon.z_moves_used": "Pokémon Z-Moves Used",
   "stat.cobblemon.pokemon_forme_changes": "Pokémon Forme Changes",
   "stat.cobblemon.pokemon_defeated": "Pokémon Defeated",
-
   "stat.cobbledollars.cobbledollars_lost": "Cobbledollars Lost",
   "stat.cobbledollars.cobbledollars_earned": "Cobbledollars Earned",
-
   "stat.cobblesafari.hoopa_rings_used": "Hoopa Rings Traversed",
   "stat.cobblesafari.safari_entered": "Safari Expeditions",
   "stat.cobblesafari.underground_treasures_found": "Underground Treasures Found",
@@ -17,27 +15,19 @@
   "stat.cobblesafari.dungeon_distortion_entered": "Distortion World Visits",
   "stat.cobblesafari.secret_base_flags_stolen": "Secret Base Flags Stolen",
   "stat.cobblesafari.reward_balloons_looted": "Reward Balloons Looted",
-
   "stat.cobblemon_quick_battle.quick_battles_total": "Pokémon Quick Battles",
   "stat.cobblemon_quick_battle.quick_battles_won": "Pokémon Quick Battles Won",
   "stat.cobblemon_quick_battle.quick_battles_lost": "Pokémon Quick Battles Lost",
-
   "stat.rustlingspots.rustling_spots_examined": "Rustling Spots Examined",
-
   "stat.cobblemonmarks.pokemon_marks_obtained": "Pokémon Marks Obtained",
-
   "stat.cobblemon_ultrabeast.ultra_wormholes_entered": "Ultra Wormholes Entered",
-
   "stat.cobblemonresearchtasks.tasks_completed": "Tasks Completed",
   "stat.cobblemonresearchtasks.entries_completed": "Entries Completed",
-
   "stat.cobblemon_snap.photos_taken": "Photos Taken",
   "stat.cobblemon_snap.photos_recorded": "Photos Recorded",
   "stat.cobblemon_snap.total_pokemon_captured": "Total Pokémon photographed",
   "stat.cobblemon_snap.unique_pokemon_captured": "Pokémon Captured",
-
   "stat.pokebike.biking": "Distance by Bike",
-
   "stat.cobblemon_expeditions.expeditions": "Expeditions Started",
   "stat.cobblemon_expeditions.expeditions_canceled": "Expeditions Canceled",
   "stat.cobblemon_expeditions.expeditions_finished": "Expeditions Finished",
@@ -45,12 +35,10 @@
   "stat.cobblemon_expeditions.expedition_result_partial": "Expeditions With Partial Result",
   "stat.cobblemon_expeditions.expedition_result_great": "Expeditions With Great Result",
   "stat.cobblemon_expeditions.expedition_result_success": "Expeditions With Successful Result",
-
   "stat.shadowedhearts.shadow_pokemon_defeated": "Shadow Pokémon Defeated",
   "stat.shadowedhearts.shadow_pokemon_caught": "Shadow Pokémon Caught",
   "stat.shadowedhearts.shadow_pokemon_purified": "Shadow Pokémon Purified",
   "stat.shadowedhearts.shadow_pokemon_snag": "Shadow Pokémon Snagged",
-
   "stat.cobblemon_battle_tower.battles_won": "Battles Won",
   "stat.cobblemon_battle_tower.battles_lost": "Battles Lost",
   "stat.cobblemon_battle_tower.runs_forfeited": "Runs Forfeited",
@@ -58,6 +46,5 @@
   "stat.cobblemon_battle_tower.bp_earned": "Total BP Earned",
   "stat.cobblemon_battle_tower.best_win_streak": "Best Win Streak",
   "stat.cobblemon_battle_tower.highest_floor": "Highest Floor Reached",
-
   "stat.cobblemon_wonder_trade.wonder_trades": "Wonder Trades"
 }

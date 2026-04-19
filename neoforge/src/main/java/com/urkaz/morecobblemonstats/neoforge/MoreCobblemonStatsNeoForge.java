@@ -1,8 +1,8 @@
 package com.urkaz.morecobblemonstats.neoforge;
 
-import com.urkaz.morecobblemonstats.stats.MCS_Stats;
 import com.urkaz.morecobblemonstats.MoreCobblemonStats;
 import com.urkaz.morecobblemonstats.commands.MCS_Commands;
+import com.urkaz.morecobblemonstats.stats.MCS_Stats;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.stats.Stats;
 import net.neoforged.bus.api.IEventBus;
