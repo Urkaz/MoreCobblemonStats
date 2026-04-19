@@ -16,7 +16,6 @@ architectury {
 
 allprojects {
     group = rootProject.maven_group
-//	version = versionProps['mod_version']
 }
 
 subprojects {

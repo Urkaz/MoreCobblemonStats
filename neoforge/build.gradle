@@ -107,7 +107,7 @@ publishMods {
     changelog = providers.fileContents(layout.projectDirectory.file(changelogFile.absolutePath)).asText
 
     type = STABLE
-    displayName = "${rootProject.display_name} ${version}"
+    displayName = "[NeoForge] ${rootProject.display_name} v${project.version}"
 
     file = project(":neoforge").tasks.named("remapJar").flatMap { it.archiveFile }
     modLoaders.add("neoforge")
