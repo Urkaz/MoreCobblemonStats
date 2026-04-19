@@ -31,7 +31,7 @@ public class StatHandlerMixin {
         Map<ResourceLocation, SpeciesDexRecord> speciesRecords = Cobblemon.playerDataManager.getPokedexData(instance.getUUID()).getSpeciesRecords();
         speciesRecords.values().forEach(dexRecord -> {
             if (dexRecord.getKnowledge() == PokedexEntryProgress.CAUGHT) caught.getAndIncrement();
-            else if (dexRecord.getKnowledge() == PokedexEntryProgress.ENCOUNTERED) seen.getAndIncrement();
+            if (dexRecord.getKnowledge().ordinal() >= PokedexEntryProgress.ENCOUNTERED.ordinal()) seen.getAndIncrement();
         });
 
         ((ServerPlayerExtensions) instance).mcs$setStat(resourceLocation, caught.intValue());
