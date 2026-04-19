@@ -101,8 +101,8 @@ remapJar {
 }
 
 publishMods {
-    dryRun = providers.environmentVariable("CURSEFORGE_TOKEN").getOrNull() == null &&
-            providers.environmentVariable("MODRINTH_TOKEN").getOrNull() == null
+    dryRun = !(project.hasProperty("cuseforge_api_key") || System.getenv("cuseforge_api_key") != null) &&
+            !(project.hasProperty("modrinth_api_key") || System.getenv("modrinth_api_key") != null)
     def changelogFile = file("${rootDir}/CHANGELOG.md")
     changelog = providers.fileContents(layout.projectDirectory.file(changelogFile.absolutePath)).asText
 
