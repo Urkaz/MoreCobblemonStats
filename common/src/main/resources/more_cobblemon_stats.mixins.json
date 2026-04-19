@@ -9,6 +9,7 @@
     "cobbledollars.PlayerExtensionKtMixin",
     "cobblemon.EmptyPokeBallEntityMixin",
     "cobblemon.PokeBallItemMixin",
+    "cobblemon.StatHandlerMixin",
     "cobblemon_battle_tower.BattleTowerManagerMixin",
     "cobblemon_expeditions.CancelExpeditionHandlerMixin",
     "cobblemon_expeditions.ClaimRewardHandlerMixin",

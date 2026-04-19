@@ -15,6 +15,7 @@ public class MCS_CobblemonStats {
     public static final MCS_Stats.CustomStat POKEMON_ZMOVES_USED = new MCS_Stats.CustomStat(MOD_ID, "z_moves_used");
     public static final MCS_Stats.CustomStat POKEMON_FORME_CHANGES = new MCS_Stats.CustomStat(MOD_ID, "pokemon_forme_changes");
     public static final MCS_Stats.CustomStat POKEMON_DEFEATED = new MCS_Stats.CustomStat(MOD_ID, "pokemon_defeated");
+    public static final MCS_Stats.CustomStat DEX_ENCOUNTERED = new MCS_Stats.CustomStat(MOD_ID, "dex_encountered");
 
     public static void registerStats(Map<String, MCS_Stats.CustomStat> stats) {
         stats.put("poke_ball_thrown", POKEBALL_THROWN);
@@ -24,5 +25,6 @@ public class MCS_CobblemonStats {
         stats.put("z_moves_used", POKEMON_ZMOVES_USED);
         stats.put("pokemon_forme_changes", POKEMON_FORME_CHANGES);
         stats.put("pokemon_defeated", POKEMON_DEFEATED);
+        stats.put("dex_encountered", DEX_ENCOUNTERED);
     }
 }
