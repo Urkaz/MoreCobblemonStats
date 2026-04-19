@@ -125,99 +125,6 @@ subprojects {
             }
         }
     }
-
-    publishMods {
-        changelog = providers.fileContents(layout.projectDirectory.file("CHANGELOG.md")).asText
-        type = STABLE
-        displayName = "${rootProject.display_name} ${version}"
-
-        // CurseForge options used by both Fabric and Forge
-        def cfOptions = curseforgeOptions {
-            accessToken = providers.environmentVariable("CURSEFORGE_TOKEN")
-            projectId = "1512630"
-            minecraftVersions.add(project.minecraft_version)
-
-            clientRequired = true
-            serverRequired = true
-
-            requires("architectury-api")
-            requires("cobblemon")
-            optional("cobbledollars")
-            optional("cobblemon-quick-battle")
-            optional("cobblemon-mega-showdown")
-            optional("cobblemon-snap")
-            optional("pokebike")
-            optional("cobblemon-battle-tower")
-            optional("cobblemon-wonder-trade")
-
-            optional("rustling-spots")
-            optional("cobblemon-marks-quests")
-            optional("cobblemon-expeditions")
-            optional("cobblemon-shadowed-hearts")
-        }
-
-        // Modrinth options used by both Fabric and Forge
-        def mrOptions = modrinthOptions {
-            projectDescription = providers.fileContents(layout.projectDirectory.file("README.md")).asText
-            accessToken = providers.environmentVariable("MODRINTH_TOKEN")
-            projectId = "67ZupZ7K"
-            minecraftVersions.add(project.minecraft_version)
-
-            requires("architectury-api")
-            requires("cobblemon")
-            optional("cobbledollars")
-            optional("cobblemon-quick-battle")
-            optional("cobblemon-mega-showdown")
-            optional("cobblemon-snap")
-            optional("pokebike")
-            optional("cobblemon-battle-tower")
-            optional("cobblemon-wonder-trade")
-
-            optional("cobblesafari")
-            optional("cobblemon-rustling-spots")
-            optional("cobblemon_expeditions")
-            optional("cobblemon-shadowedhearts")
-        }
-
-        // Fabric specific options for CurseForge
-        curseforge("curseforgeFabric") {
-            from cfOptions
-            file project(":fabric").tasks.remapJar.archiveFile
-            modLoaders.add("fabric")
-            requires {
-                slug = "fabric-api"
-            }
-
-            optional("cobblemon-research-tasks")
-            optional("cobblemon-ultra-beasts")
-        }
-
-        // Forge specific options for CurseForge
-        curseforge("curseforgeNeoForge") {
-            from cfOptions
-            file project(":neoforge").tasks.remapJar.archiveFile
-            modLoaders.add("neoforge")
-        }
-
-        // Fabric specific options for Modrinth
-        modrinth("modrinthFabric") {
-            from mrOptions
-            file project(":fabric").tasks.remapJar.archiveFile
-            modLoaders.add("fabric")
-            requires {
-                slug = "fabric-api"
-            }
-
-            optional("cobblemon-research-tasks")
-        }
-
-        // NeoForge specific options for Modrinth
-        modrinth("modrinthNeoForge") {
-            from mrOptions
-            file project(":neoforge").tasks.remapJar.archiveFile
-            modLoaders.add("neoforge")
-        }
-    }
 }
 
 static def getNextSnapshotVersion(String version, String minecraft_version) {
@@ -228,4 +135,124 @@ static def getNextSnapshotVersion(String version, String minecraft_version) {
 
 static def getThisVersion(String version, String minecraft_version) {
     return "${version}-mc${minecraft_version}"
+}
+
+ext {
+    /* -- MOD PUBLISHING -- */
+    configCurseForgePublish = { p ->
+        p.accessToken = providers.environmentVariable("CURSEFORGE_TOKEN")
+        p.projectId = "1512630"
+        p.minecraftVersions.add(rootProject.minecraft_version)
+        p.clientRequired = true
+        p.serverRequired = true
+    }
+    configModrinthPublish = { p ->
+        p.accessToken = providers.environmentVariable("MODRINTH_TOKEN")
+        p.projectId = "67ZupZ7K"
+        def projectDescriptionFile = file("${rootDir}/README.md")
+        p.projectDescription = providers.fileContents(layout.projectDirectory.file(projectDescriptionFile.absolutePath)).asText
+        p.minecraftVersions.add(rootProject.minecraft_version)
+    }
+
+    modPublishDependencies = [
+            [
+                    id        : "fabric-api",
+                    onlyLoader: "fabric",
+                    required  : true
+            ],
+            [
+                    id      : "architectury-api",
+                    required: true
+            ],
+            [
+                    id      : "cobblemon",
+                    required: true
+            ],
+            [
+                    id      : "cobbledollars",
+                    required: false
+            ],
+            [
+                    id      : "cobblemon-quick-battle",
+                    required: false
+            ],
+            [
+                    id      : "cobblemon-mega-showdown",
+                    required: false
+            ],
+            [
+                    id      : "cobblemon-snap",
+                    required: false
+            ],
+            [
+                    id      : "pokebike",
+                    required: false
+            ],
+            [
+                    id      : "cobblemon-battle-tower",
+                    required: false
+            ],
+            [
+                    id      : "cobblemon-wonder-trade",
+                    required: false
+            ],
+            [
+                    id          : "cobblesafari",
+                    onlyPlatform: "modrinth",
+                    required    : false
+            ],
+            [
+                    id          : "cobblemon-marks-quests",
+                    onlyPlatform: "curseforge",
+                    required    : false
+            ],
+            [
+                    id          : "cobblemon-ultra-beasts",
+                    onlyPlatform: "curseforge",
+                    onlyLoader  : "fabric",
+                    required    : false
+            ],
+            [
+                    curseforge: "rustling-spots",
+                    modrinth  : "cobblemon-rustling-spots",
+                    required  : false
+            ],
+            [
+                    curseforge: "cobblemon-expeditions",
+                    modrinth  : "cobblemon_expeditions",
+                    required  : false
+            ],
+            [
+                    curseforge: "cobblemon-shadowed-hearts",
+                    modrinth  : "cobblemon-shadowedhearts",
+                    required  : false
+            ],
+            [
+                    id        : "cobblemon-research-tasks",
+                    onlyLoader: "fabric",
+                    required  : false
+            ]
+    ]
+
+    applyDependencies = { p, platform, loader ->
+        modPublishDependencies.each { d ->
+
+            if (d.onlyPlatform && d.onlyPlatform != platform) return
+            if (d.onlyLoader && d.onlyLoader != loader) return
+            if (d.excludeLoader && d.excludeLoader == loader) return
+
+            def id = d[platform] ?: d.id
+            if (!id) return
+
+            if (d.version) {
+                id = "${id}:${d.version}"
+            }
+
+            if (d.required) {
+                p.requires(id)
+            } else {
+                p.optional(id)
+            }
+        }
+    }
 }

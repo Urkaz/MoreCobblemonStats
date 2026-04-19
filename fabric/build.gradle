@@ -108,3 +108,27 @@ remapJar {
     input.set shadowJar.archiveFile
 }
 
+publishMods {
+    dryRun = providers.environmentVariable("CURSEFORGE_TOKEN").getOrNull() == null &&
+            providers.environmentVariable("MODRINTH_TOKEN").getOrNull() == null
+    def changelogFile = file("${rootDir}/CHANGELOG.md")
+    changelog = providers.fileContents(layout.projectDirectory.file(changelogFile.absolutePath)).asText
+
+    type = STABLE
+    displayName = "${rootProject.display_name} ${version}"
+
+    file = project(":fabric").tasks.named("remapJar").flatMap { it.archiveFile }
+    modLoaders.add("fabric")
+
+    // --- FABRIC CURSEFORGE ---
+    curseforge("curseForgeFabric") {
+        configCurseForgePublish(it)
+        applyDependencies(it, "curseforge", "fabric")
+    }
+
+    // --- FABRIC MODRINTH ---
+    modrinth("modrinthFabric") {
+        configModrinthPublish(it)
+        applyDependencies(it, "modrinth", "fabric")
+    }
+}

@@ -99,3 +99,28 @@ shadowJar {
 remapJar {
     input.set shadowJar.archiveFile
 }
+
+publishMods {
+    dryRun = providers.environmentVariable("CURSEFORGE_TOKEN").getOrNull() == null &&
+            providers.environmentVariable("MODRINTH_TOKEN").getOrNull() == null
+    def changelogFile = file("${rootDir}/CHANGELOG.md")
+    changelog = providers.fileContents(layout.projectDirectory.file(changelogFile.absolutePath)).asText
+
+    type = STABLE
+    displayName = "${rootProject.display_name} ${version}"
+
+    file = project(":neoforge").tasks.named("remapJar").flatMap { it.archiveFile }
+    modLoaders.add("neoforge")
+
+    // --- NEOFORGE CURSEFORGE ---
+    curseforge("curseforgeNeoForge") {
+        configCurseForgePublish(it)
+        applyDependencies(it, "curseforge", "neoforge")
+    }
+
+    // --- NEOFORGE MODRINTH ---
+    modrinth("modrinthNeoForge") {
+        configModrinthPublish(it)
+        applyDependencies(it, "modrinth", "neoforge")
+    }
+}
