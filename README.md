@@ -79,7 +79,7 @@
 You can use any of the new stats natively with FTB Quests! No special quest nodes or extra mods.
 
 <details>
-<summary>Spoiler</summary>
+<summary>FTB Quests</summary>
 
 FTB Quests native integration with "Stat" quest type:
 
