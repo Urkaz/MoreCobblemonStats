@@ -140,14 +140,14 @@ static def getThisVersion(String version, String minecraft_version) {
 ext {
     /* -- MOD PUBLISHING -- */
     configCurseForgePublish = { p ->
-        p.accessToken = providers.environmentVariable("CURSEFORGE_TOKEN")
+        p.accessToken = project.hasProperty("cuseforge_api_key") ? project.property("cuseforge_api_key") : System.getenv("cuseforge_api_key")
         p.projectId = "1512630"
         p.minecraftVersions.add(rootProject.minecraft_version)
         p.clientRequired = true
         p.serverRequired = true
     }
     configModrinthPublish = { p ->
-        p.accessToken = providers.environmentVariable("MODRINTH_TOKEN")
+        p.accessToken = project.hasProperty("modrinth_api_key") ? project.property("modrinth_api_key") : System.getenv("modrinth_api_key")
         p.projectId = "67ZupZ7K"
         def projectDescriptionFile = file("${rootDir}/README.md")
         p.projectDescription = providers.fileContents(layout.projectDirectory.file(projectDescriptionFile.absolutePath)).asText
