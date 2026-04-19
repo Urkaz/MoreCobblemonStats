@@ -15,6 +15,7 @@
     * Pokémon Mega Evolved
     * Pokémon Forme Changes
     * Pokémon Z-Moves Used
+    * Pokémon Pokédex Seen: _(only updated when catching a Pokémon)_
 * [Cobbledollars (2.0.0+Beta-5.1)](https://modrinth.com/mod/cobbledollars)
     * Cobbledollars Earned
     * Cobbledollars Lost
